@@ -10,237 +10,378 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10433,        260]
-NotebookOptionsPosition[      9755,        241]
-NotebookOutlinePosition[     10160,        257]
-CellTagsIndexPosition[     10117,        254]
+NotebookDataLength[     16893,        399]
+NotebookOptionsPosition[     16361,        381]
+NotebookOutlinePosition[     16808,        398]
+CellTagsIndexPosition[     16765,        395]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[
- RowBox[{"(", "\[IndentingNewLine]", 
-  RowBox[{"data", ":=", 
-   RowBox[{"(", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"#", ",", " ", 
-          RowBox[{"CountryData", "[", 
-           RowBox[{"#", ",", " ", "\"\<LifeExpectancy\>\""}], "]"}]}], "}"}], 
-        "&"}], "/@", 
-       RowBox[{"CountryData", "[", "]"}]}], "\[IndentingNewLine]", "//", " ", 
-      RowBox[{"DeleteCases", "[", 
-       RowBox[{"{", 
-        RowBox[{"_", ",", " ", "_Missing"}], "}"}], "]"}]}], 
-     "\[IndentingNewLine]", " ", "//", 
-     RowBox[{"SortBy", "[", 
-      RowBox[{
-       RowBox[{"-", 
-        RowBox[{"Part", "[", 
-         RowBox[{"#", ",", "2"}], "]"}]}], "&"}], "]"}]}], 
-    "\[IndentingNewLine]", ")"}], "\[IndentingNewLine]"}]}]], "Input",
- CellChangeTimes->{{3.8748058131709414`*^9, 3.874805851750035*^9}, {
-   3.8748058825685253`*^9, 3.8748060317721615`*^9}, 3.8748062339439707`*^9, {
-   3.8748063432840295`*^9, 3.8748063791094255`*^9}, {3.8748064220990715`*^9, 
-   3.874806499761587*^9}, {3.8748065337028027`*^9, 3.874806599573037*^9}, {
-   3.874806630201352*^9, 3.8748066800026693`*^9}, {3.8748067130615215`*^9, 
-   3.8748067319418707`*^9}, {3.874806762035164*^9, 3.8748067944647813`*^9}, {
-   3.87480708107519*^9, 3.874807085958498*^9}, {3.8748072626440535`*^9, 
-   3.874807293724192*^9}, {3.8749320998626637`*^9, 
-   3.874932124502553*^9}},ExpressionUUID->"b3bda531-b611-4bd1-a6b7-\
-98acac8881b4"],
-
-Cell[BoxData[
- RowBox[{"(", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{
-     RowBox[{
-      RowBox[{"CountryData", "[", "]"}], "\[IndentingNewLine]", "//", 
-      RowBox[{"Map", "[", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"#", ",", " ", 
-          RowBox[{"CountryData", "[", 
-           RowBox[{"#", ",", " ", "\"\<Population\>\""}], "]"}], ",", 
-          RowBox[{"CountryData", "[", 
-           RowBox[{"#", ",", " ", "\"\<LifeExpectancy\>\""}], "]"}]}], "}"}], 
-        "&"}], "]"}]}], "\[IndentingNewLine]", " ", "//", 
-     RowBox[{"DeleteCases", "[", 
-      RowBox[{"{", 
-       RowBox[{"__", ",", "_Missing", ",", "___"}], "}"}], "]"}]}], 
-    "\[IndentingNewLine]", "   ", "//", 
-    RowBox[{"Map", "[", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"Part", "[", 
-         RowBox[{"#", ",", "1"}], "]"}], ",", " ", 
-        RowBox[{"Part", "[", 
-         RowBox[{"#", ",", "2"}], "]"}], ",", " ", 
-        RowBox[{
-         RowBox[{"Part", "[", 
-          RowBox[{"#", ",", "2"}], "]"}], "*", 
-         RowBox[{"Part", "[", 
-          RowBox[{"#", ",", " ", "3"}], "]"}]}]}], "}"}], "&"}], "]"}]}], 
-   "\[IndentingNewLine]", "     ", "//", 
-   RowBox[{"GroupBy", "[", 
-    RowBox[{
-     RowBox[{"CountryData", "[", 
-      RowBox[{
-       RowBox[{"#", "//", "First"}], ",", "\"\<Continent\>\""}], "]"}], "&"}],
-     "]"}]}], "\[IndentingNewLine]", ")"}]], "Input",
- CellChangeTimes->{{3.8748073276910753`*^9, 3.8748074231964674`*^9}, {
-   3.8748075271493807`*^9, 3.874807652088636*^9}, {3.874807685294896*^9, 
-   3.8748077024690695`*^9}, {3.8748077615466723`*^9, 
-   3.8748078950803766`*^9}, {3.8748079369229193`*^9, 
-   3.8748080862929525`*^9}, {3.874808153883979*^9, 3.874808295132024*^9}, 
-   3.8748084133535166`*^9, {3.8748084954829493`*^9, 3.874808495634926*^9}, {
-   3.874932129143026*^9, 3.8749322027033234`*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"a827b54a-fa2a-45f2-bf04-f04c566b793b"],
 
 Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
    RowBox[{"(", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
-      RowBox[{"filterProp", "[", "propName__", "]"}], ":=", 
-      RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"CountryData", "[", "]"}], "\[IndentingNewLine]", "//", " ", 
+       RowBox[{"Select", "[", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"CountryData", "[", 
+             RowBox[{"#", ",", "\"\<LifeExpectancy\>\""}], "]"}], "//", 
+            "MissingQ"}], " ", "//", " ", "Not"}], ")"}], "&"}], "]"}]}], 
+      "\[IndentingNewLine]", " ", "//", " ", 
+      RowBox[{"Map", "[", 
        RowBox[{
-        RowBox[{"(", 
+        RowBox[{"<|", "\[IndentingNewLine]", "\t", 
          RowBox[{
-          RowBox[{"CountryData", "[", 
-           RowBox[{"#", ",", " ", "propName"}], "]"}], "\[IndentingNewLine]", 
-          "//", 
-          RowBox[{"MatchQ", "[", 
-           RowBox[{"Except", "@", "_Missing"}], "]"}]}], ")"}], "&"}], 
-       "]"}]}], ";"}], "\[IndentingNewLine]", ")"}], "\[IndentingNewLine]", 
+          RowBox[{"\"\<continent\>\"", "->", 
+           RowBox[{"CountryData", "[", 
+            RowBox[{"#", ",", " ", "\"\<Continent\>\""}], "]"}]}], ",", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"\"\<population\>\"", " ", "->", " ", 
+           RowBox[{"CountryData", "[", 
+            RowBox[{"#", ",", "\"\<Population\>\""}], "]"}]}], ",", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"\"\<populationYears\>\"", "->", 
+           RowBox[{
+            RowBox[{"CountryData", "[", 
+             RowBox[{"#", ",", "\"\<Population\>\""}], "]"}], "*", 
+            RowBox[{"CountryData", "[", 
+             RowBox[{"#", ",", " ", "\"\<LifeExpectancy\>\""}], "]"}]}]}]}], 
+         "\[IndentingNewLine]", "|>"}], "&"}], "]"}]}], "\[IndentingNewLine]",
+      "   ", "//", "Dataset"}], "\[IndentingNewLine]", ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"averageLifeExpectancyByContinent", "=", 
    RowBox[{"(", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"applicableCountriesByContinent", " ", ":=", 
-      RowBox[{
+     RowBox[{
+      RowBox[{"data", " ", "[", 
        RowBox[{
-        RowBox[{
-         RowBox[{"CountryData", "[", "]"}], " ", "\[IndentingNewLine]", "//", 
-         RowBox[{"filterProp", "[", "\"\<LifeExpectancy\>\"", "]"}]}], 
-        "\[IndentingNewLine]", " ", "//", 
-        RowBox[{"filterProp", "[", "\"\<Population\>\"", "]"}]}], 
-       "\[IndentingNewLine]", "   ", "//", 
-       RowBox[{"GroupBy", "[", 
-        RowBox[{
-         RowBox[{"CountryData", "[", 
-          RowBox[{"#", ",", "\"\<Continent\>\""}], "]"}], "&"}], "]"}]}]}], 
-     ";"}], "\[IndentingNewLine]", ")"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"getPopulationTimesExpectancy", "[", "name_", "]"}], ":=", 
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{"CountryData", "[", 
-        RowBox[{"name", ",", " ", "\"\<Population\>\""}], "]"}], "*", 
-       RowBox[{"CountryData", "[", 
-        RowBox[{"name", ",", " ", "\"\<LifeExpectancy\>\""}], "]"}]}], 
-      ")"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"populationTimesExpectancyByContinent", " ", ":=", 
-     RowBox[{"applicableCountriesByContinent", " ", "//", 
-      RowBox[{"Map", "[", 
+        RowBox[{"GroupBy", "[", "\"\<continent\>\"", "]"}], ",", " ", 
+        "Total"}], "]"}], "\[IndentingNewLine]", "[", 
+      RowBox[{"All", ",", 
        RowBox[{
-        RowBox[{"getPopulationTimesExpectancy", "/@", "#"}], "&"}], "]"}]}]}],
-     ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"getPopulation", "[", "name_", "]"}], " ", ":=", 
-     RowBox[{"CountryData", "[", 
-      RowBox[{"name", ",", " ", "\"\<Population\>\""}], "]"}]}], " ", ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"populationSumsByContinent", " ", ":=", 
-     RowBox[{"applicableCountriesByContinent", "//", 
-      RowBox[{"Map", "[", 
-       RowBox[{
-        RowBox[{"Total", "[", 
-         RowBox[{"getPopulation", "/@", "#"}], "]"}], "&"}], "]"}]}]}], ";"}],
-    "\[IndentingNewLine]", "populationSumsByContinent"}]}]], "Input",
- CellChangeTimes->{{3.874808588792959*^9, 3.874809027052822*^9}, {
-   3.8748090704596167`*^9, 3.874809099631368*^9}, {3.874809145099247*^9, 
-   3.874809166832426*^9}, {3.874809331213803*^9, 3.87480933846741*^9}, {
-   3.8748094024498415`*^9, 3.8748095878573275`*^9}, {3.874809775931507*^9, 
-   3.8748097812473865`*^9}, {3.8748098236046724`*^9, 
-   3.8748098237846284`*^9}, {3.8748099464801493`*^9, 
-   3.8748099843711653`*^9}, {3.874810050759104*^9, 3.874810149662859*^9}, {
-   3.874810190706571*^9, 3.874810439334709*^9}, {3.87481049505341*^9, 
-   3.8748106034333267`*^9}, {3.874810654506686*^9, 3.8748108769009027`*^9}, {
-   3.8749323038034377`*^9, 3.874932361082977*^9}, 3.8749323957225666`*^9},
- CellLabel->"In[16]:=",ExpressionUUID->"fa5265c6-e471-4cea-9c7e-91d21bdcf0b2"],
+        RowBox[{"<|", 
+         RowBox[{"\"\<averageLifeExpectancy\>\"", "->", 
+          RowBox[{"#populationYears", "/", "#population"}]}], "|>"}], "&"}]}],
+       "]"}], "\[IndentingNewLine]", "  ", "[", 
+     RowBox[{"SortBy", "[", "\"\<averageLifeExpectancy\>\"", "]"}], "]"}], 
+    "\[IndentingNewLine]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"BarChart", "[", 
+  RowBox[{
+   RowBox[{"Normal", "[", 
+    RowBox[{"averageLifeExpectancyByContinent", "[", 
+     RowBox[{"All", ",", " ", "\"\<averageLifeExpectancy\>\""}], "]"}], "]"}],
+    ",", "\[IndentingNewLine]", 
+   RowBox[{"ChartLabels", "\[Rule]", 
+    RowBox[{"Normal", "[", 
+     RowBox[{"averageLifeExpectancyByContinent", "[", "Keys", "]"}], 
+     "]"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8749850669906263`*^9, 3.87498517163243*^9}, {
+   3.874985224735186*^9, 3.874985226334716*^9}, {3.874985260276267*^9, 
+   3.874985369621249*^9}, {3.874985646136032*^9, 3.8749857295128145`*^9}, {
+   3.8749857840328836`*^9, 3.874985797057625*^9}, {3.874985850449421*^9, 
+   3.8749860589263425`*^9}, {3.874986188171962*^9, 3.874986188958829*^9}, {
+   3.8749863250540285`*^9, 3.874986429268873*^9}, {3.874986750513054*^9, 
+   3.874986786941641*^9}, {3.8749868829875474`*^9, 3.8749868969909334`*^9}, {
+   3.8749869573797784`*^9, 3.8749870295213947`*^9}, {3.8749878028785925`*^9, 
+   3.8749878077186165`*^9}, {3.8749879886153183`*^9, 
+   3.8749880691767554`*^9}, {3.8749881585597615`*^9, 
+   3.8749881740012636`*^9}, {3.8749882414987354`*^9, 3.874988251928317*^9}, {
+   3.8749884118739142`*^9, 3.874988481170279*^9}, {3.874988735632724*^9, 
+   3.8749887606733155`*^9}, {3.8749887919160957`*^9, 3.874988807127735*^9}, 
+   3.8749889847344646`*^9, {3.874989033816269*^9, 3.874989062723482*^9}, {
+   3.8749891509951735`*^9, 3.8749891678288183`*^9}, {3.874989232667926*^9, 
+   3.87498960796103*^9}, {3.874989662108715*^9, 3.874989689234028*^9}, {
+   3.874989742219429*^9, 3.8749897529898024`*^9}, 3.8749898383822637`*^9, {
+   3.8749899021240487`*^9, 3.874989942071476*^9}, {3.8749899841006117`*^9, 
+   3.8749899922965727`*^9}, 3.87499034962173*^9, {3.8749912235425463`*^9, 
+   3.8749912722630763`*^9}, {3.874991554271632*^9, 3.8749915890142574`*^9}, {
+   3.874991620013261*^9, 3.874991711853583*^9}, {3.874991744432187*^9, 
+   3.87499191892026*^9}, 3.874992007855733*^9, {3.8749921047808847`*^9, 
+   3.8749921566164446`*^9}, {3.874992221532956*^9, 3.8749922701899443`*^9}, {
+   3.874992318475473*^9, 
+   3.874992330767515*^9}},ExpressionUUID->"9f30724f-690c-48a1-b998-\
+d435f72b1933"],
 
 Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{
-    TemplateBox[{"\"Asia\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"Asia\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"Asia\\\"]\"", "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"4786382269", "\"people\"", "people", "\"People\""},
-     "Quantity"]}], ",", 
-   RowBox[{
-    TemplateBox[{"\"Europe\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"Europe\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"Europe\\\"]\"", "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"603600661", "\"people\"", "people", "\"People\""},
-     "Quantity"]}], ",", 
-   RowBox[{
-    TemplateBox[{"\"Africa\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"Africa\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"Africa\\\"]\"", "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"1340598113", "\"people\"", "people", "\"People\""},
-     "Quantity"]}], ",", 
-   RowBox[{
-    TemplateBox[{"\"Oceania\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"Oceania\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"Oceania\\\"]\"", "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"42674841", "\"people\"", "people", "\"People\""},
-     "Quantity"]}], ",", 
-   RowBox[{
-    TemplateBox[{"\"North America\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"NorthAmerica\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"NorthAmerica\\\"]\"", 
-      "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"592492617", "\"people\"", "people", "\"People\""},
-     "Quantity"]}], ",", 
-   RowBox[{
-    TemplateBox[{"\"South America\"", 
-      RowBox[{"EntityClass", "[", 
-        RowBox[{"\"Country\"", ",", "\"SouthAmerica\""}], "]"}], 
-      "\"EntityClass[\\\"Country\\\", \\\"SouthAmerica\\\"]\"", 
-      "\"countries\""},
-     "EntityClass"], "\[Rule]", 
-    TemplateBox[{"430759772", "\"people\"", "people", "\"People\""},
-     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{
-  3.8748108780886817`*^9, 3.8749320953627596`*^9, {3.8749323844103785`*^9, 
-   3.8749323984724593`*^9}},
- CellLabel->"Out[22]=",ExpressionUUID->"6f9ea3f9-640c-43f2-9c0d-fe9749056d26"]
+ GraphicsBox[{
+   {Opacity[0], 
+    PointBox[{{0.43075018208302984`, 0.}, {6.451201747997087, 0.}}]}, {{}, 
+    {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+     0.6579999999999999], Thickness[Small]}], 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+             65.84763493275781}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{24.14307374329825, 
+            103.15099340270727`}, {-106.2469581778771, 156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 65.84763493275781]& ,
+         TagBoxNote->"65.84763493275781"],
+        StyleBox["65.84763493275781`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[65.84763493275781, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{1.5487982520029133`, 0.}, {2.4512017479970867`, 
+             73.4650088638898}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{111.14176114633989`, 
+            190.14968080574891`}, {-136.62465094788143`, 
+            156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 73.4650088638898]& ,
+         TagBoxNote->"73.4650088638898"],
+        StyleBox["73.4650088638898`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[73.4650088638898, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{2.5487982520029133`, 0.}, {3.4512017479970867`, 
+             75.62147357795055}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{198.14044854938152`, 
+            277.1483682087906}, {-145.22452055456586`, 156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 75.62147357795055]& ,
+         TagBoxNote->"75.62147357795055"],
+        StyleBox["75.62147357795055`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[75.62147357795055, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{3.5487982520029133`, 0.}, {4.451201747997087, 
+             78.90759699739684}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{285.1391359524232, 
+            364.14705561183223`}, {-158.3294105787084, 156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 78.90759699739684]& ,
+         TagBoxNote->"78.90759699739684"],
+        StyleBox["78.90759699739684`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[78.90759699739684, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{4.548798252002913, 0.}, {5.451201747997087, 
+             79.5020446011738}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{372.13782335546483`, 
+            451.14574301487386`}, {-160.7000368389737, 156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 79.5020446011738]& ,
+         TagBoxNote->"79.5020446011738"],
+        StyleBox["79.5020446011738`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[79.5020446011738, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[
+      0.6579999999999999], Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{5.548798252002913, 0.}, {6.451201747997087, 
+             80.2077814592718}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{459.13651075850646`, 
+            538.1444304179155}, {-163.51447888233332`, 156.84999999999997`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 80.2077814592718]& ,
+         TagBoxNote->"80.2077814592718"],
+        StyleBox["80.2077814592718`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[80.2077814592718, {}], "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
+   StyleBox[
+    StyleBox[{
+      {Thickness[Tiny], 
+       LineBox[{{0.43075018208302984`, 0.}, {6.5716107793153675`, 0.}}], 
+       StyleBox[{}, "GraphicsLabel",
+        StripOnInput->False]}, 
+      StyleBox[{
+        {Thickness[Tiny], 
+         LineBox[{{0.5487982520029133, 0.}, 
+           Offset[{-1.102182119232618*^-15, -6.}, {0.5487982520029133, 0.}]}],
+          LineBox[{{6.451201747997087, 0.}, 
+           Offset[{-1.102182119232618*^-15, -6.}, {6.451201747997087, 
+            0.}]}], {{}, {}, {}, {}, {}, {}, {
+           LineBox[{{1.4512017479970867`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {1.4512017479970867`, 
+              0.}]}], LineBox[{{1.5487982520029133`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {1.5487982520029133`, 
+              0.}]}], LineBox[{{2.4512017479970867`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {2.4512017479970867`, 
+              0.}]}], LineBox[{{2.5487982520029133`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {2.5487982520029133`, 
+              0.}]}], LineBox[{{3.4512017479970867`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {3.4512017479970867`, 
+              0.}]}], LineBox[{{3.5487982520029133`, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {3.5487982520029133`, 
+              0.}]}], LineBox[{{4.451201747997087, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {4.451201747997087, 
+              0.}]}], LineBox[{{4.548798252002913, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {4.548798252002913, 
+              0.}]}], LineBox[{{5.451201747997087, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {5.451201747997087, 
+              0.}]}], LineBox[{{5.548798252002913, 0.}, 
+             Offset[{-7.347880794884119*^-16, -4.}, {5.548798252002913, 
+              0.}]}]}, {}}}, 
+        StyleBox[
+         {Thickness[Tiny], InsetBox[
+           TemplateBox[{"\"Africa\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"Africa\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"Africa\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {1., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}], InsetBox[
+           TemplateBox[{"\"Asia\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"Asia\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"Asia\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {2., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}], InsetBox[
+           TemplateBox[{"\"South America\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"SouthAmerica\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"SouthAmerica\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {3., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}], InsetBox[
+           TemplateBox[{"\"North America\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"NorthAmerica\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"NorthAmerica\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {4., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}], InsetBox[
+           TemplateBox[{"\"Oceania\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"Oceania\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"Oceania\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {5., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}], InsetBox[
+           TemplateBox[{"\"Europe\"", 
+             RowBox[{"EntityClass", "[", 
+               RowBox[{"\"Country\"", ",", "\"Europe\""}], "]"}], 
+             "\"EntityClass[\\\"Country\\\", \\\"Europe\\\"]\""},
+            "EntityTraditionalFramed"], Offset[{0, -2}, {6., 0.}], 
+           ImageScaled[{Rational[1, 2], 1}], Automatic, {1, 0}]}, 
+         "GraphicsLabel",
+         StripOnInput->False]}, "GraphicsTicks",
+       StripOnInput->False]},
+     Antialiasing->False], "GraphicsAxes",
+    StripOnInput->False]},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{False, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0.43075018208302984`, 0.},
+  CoordinatesToolOptions:>{"DisplayFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& )},
+  DisplayFunction->Identity,
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{559.5, Automatic},
+  PlotRange->{{All, All}, {All, All}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{None, Automatic}]], "Output",
+ CellChangeTimes->{3.8749921591726613`*^9, 3.8749922372329693`*^9, 
+  3.87499227520627*^9},
+ CellLabel->
+  "Out[176]=",ExpressionUUID->"9c0c4505-62d8-44da-a0ce-8c458da2aba7"]
 }, Open  ]]
 },
 WindowSize->{1141.5, 630.75},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"d1cd0017-347a-4d9f-a2ca-e64199aa3bbb"
@@ -256,11 +397,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1473, 33, 124, "Input",ExpressionUUID->"b3bda531-b611-4bd1-a6b7-98acac8881b4"],
-Cell[2034, 55, 1961, 47, 143, "Input",ExpressionUUID->"a827b54a-fa2a-45f2-bf04-f04c566b793b"],
 Cell[CellGroupData[{
-Cell[4020, 106, 3316, 74, 314, "Input",ExpressionUUID->"fa5265c6-e471-4cea-9c7e-91d21bdcf0b2"],
-Cell[7339, 182, 2400, 56, 77, "Output",ExpressionUUID->"6f9ea3f9-640c-43f2-9c0d-fe9749056d26"]
+Cell[580, 22, 4441, 90, 333, "Input",ExpressionUUID->"9f30724f-690c-48a1-b998-d435f72b1933"],
+Cell[5024, 114, 11321, 264, 373, "Output",ExpressionUUID->"9c0c4505-62d8-44da-a0ce-8c458da2aba7"]
 }, Open  ]]
 }
 ]
