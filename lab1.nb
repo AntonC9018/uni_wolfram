@@ -1,0 +1,605 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     28060,        597]
+NotebookOptionsPosition[     24105,        521]
+NotebookOutlinePosition[     24512,        537]
+CellTagsIndexPosition[     24469,        534]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Laborator nr.1 la Paradgme de Programare", "Title",
+ CellChangeTimes->{{3.875755403150796*^9, 3.8757554087463517`*^9}, {
+  3.875755439400487*^9, 
+  3.875755442825379*^9}},ExpressionUUID->"5569aab6-d57e-4858-aab2-\
+d9850387774b"],
+
+Cell["Referat la tem\[ACup] \"Descrierea paradigmelor de programare\"", \
+"Subtitle",
+ CellChangeTimes->{{3.875755450152871*^9, 
+  3.875755535793165*^9}},ExpressionUUID->"5a103b70-f925-4eb4-b60a-\
+24ef9a6ed117"],
+
+Cell["Autor: Curmanschii Anton, MIA2201", "Subsubtitle",
+ CellChangeTimes->{{3.8757555948518224`*^9, 
+  3.875755617108124*^9}},ExpressionUUID->"7ed57c85-8e68-4366-aaa5-\
+a08ff4ed60f5"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1"],
+
+Cell[CellGroupData[{
+
+Cell["Descrierea principalelor paradigme de programare", "Section",
+ CellChangeTimes->{{3.875755639936074*^9, 3.87575569473835*^9}, 
+   3.8757637210628896`*^9},ExpressionUUID->"5f2beb92-3ada-4762-92a3-\
+90f6d57ab33c"],
+
+Cell[CellGroupData[{
+
+Cell["Introducere", "Subsection",
+ CellChangeTimes->{{3.8757629940832863`*^9, 
+  3.875762995781241*^9}},ExpressionUUID->"43db8621-d684-4227-a984-\
+5e1bba05c347"],
+
+Cell["\<\
+Paradigme de programare sunt ni\:0219te abord\[ACup]ri sau moduri diferite de \
+a g\[AHat]ndi, folosite pentru a crea un program. Limbajele de programare \
+\[IHat]ntr-un careva mod supun sau sugerez una sau mai multe paradigme \
+concrete la programator. Paradigmele de programare reprezint\[ACup] un set de \
+concepte sau un set de abstrac\:021bii sau limit\[ACup]ri \
+con\:0219tientizate, care ghideaz\[ACup] programatorul la solu\:021bii mai \
+bune sau \"corecte\" \[IHat]n scopul limbajului de programare folosit. 
+\[CapitalIHat]n acest capitol se vor descrie paradigmele principale de \
+programare \:0219i vor fi men\:021bionate ni\:0219te limbaje de programare \
+concrete cunoscute de autor care le implementeaz\[ACup].\
+\>", "Text",
+ CellChangeTimes->{{3.8757556988768024`*^9, 3.8757557689166985`*^9}, {
+  3.8757560508971615`*^9, 3.875756266638393*^9}, {3.875756325845954*^9, 
+  3.875756429270307*^9}},ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-\
+1981cac627f1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enumerarea principalelor paradigme de programare", "Subsection",
+ CellChangeTimes->{{3.875755796321833*^9, 3.8757558059748907`*^9}, {
+  3.875755891733116*^9, 
+  3.8757559032860055`*^9}},ExpressionUUID->"171a4cb0-a4a6-4311-ae46-\
+52956ccdcf19"],
+
+Cell[TextData[{
+ "Paradigmele de programare au fost diverse chiar \[IHat]ncep\[AHat]nd cu \
+zilele de origine a conceptelor limbajelor de programare. Prima \:0219i, f\
+\[ACup]r\[ACup] \[IHat]ndoial\[ACup], cea mai important\[ACup] \
+paradigm\[ACup] de programare este ",
+ StyleBox["programarea imperativ\[ACup]",
+  FontWeight->"Bold"],
+ ". Aceasta implic\[ACup] oferirea ",
+ StyleBox["fluxul de control",
+  FontSlant->"Italic"],
+ " al codului de program, ceea ce permite ",
+ StyleBox["executarea instruc\:021biunilor concrete \[IHat]n ordine",
+  FontSlant->"Italic"],
+ ". Programele imperative func\:021bioneaz\[ACup] prin ",
+ StyleBox["schimbarea st\[ACup]rii programului",
+  FontSlant->"Italic"],
+ " folosind aceste instruc\:021biuni. Plusul cel mai mare al acestei \
+paradigme este c\[AHat]t de u\:0219or se poate realiza diferite algoritme. \
+Programarea imperativ\[ACup] con\:021bine dou\[ACup] subparadigme: ",
+ StyleBox["programarea procedural\[ACup] ",
+  FontWeight->"Bold"],
+ "\:0219i ",
+ StyleBox["programarea orientat\[ACup] pe obiecte",
+  FontWeight->"Bold"],
+ ". Programarea procedural\[ACup] presupune programarea procedurilor care \
+reprezint\[ACup] unele ac\:021biuni performate pe baza sau cu datele de \
+intrare. Procedurile nu sunt legate direct la structuri de date, prin urmare \
+datele sunt mereu administrate \[IHat]n afar\[ACup] procedurilor care opereaz\
+\[ACup] pe baza lor. Programarea orientat\[ACup] pe obiecte presupune \
+cuplarea datelor cu procedurile, atribuindu-le numele nou de metode. \
+Programele atunci sunt reprezentate de obiecte separate care se \
+comunic\[ACup] prin \"mesaje\", adic\[ACup] invoc\[AHat]nd metode pe alte \
+obiecte. ",
+ StyleBox["Programare declarativ\[ACup] ",
+  FontWeight->"Bold"],
+ "presupune definirea ",
+ StyleBox["structurii programului",
+  FontSlant->"Italic"],
+ ", permit\[AHat]nd abstractizarea algoritmelor folosind compunerea unelor \
+elemente logice, ca ",
+ StyleBox["func\:021bii",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["reguli",
+  FontWeight->"Bold"],
+ " sau ",
+ StyleBox["date",
+  FontWeight->"Bold"],
+ ". Programarea declarativ\[ACup] are ca scop abstractizarea \
+instruc\:021biunilor concrete, reprezent\[AHat]ndu-le la un nivel mai \
+\[IHat]nalt, uneori permit\[AHat]nd implementarea concret\[ACup] altor \
+sisteme. De exemplu, ",
+ StyleBox["programarea func\:021bional\[ACup] ",
+  FontWeight->"Bold"],
+ "reprezint\[ACup] algoritmele prin compunerea func\:021biilor pure care \
+realizeaz\[ACup] unele algoritme mai simple, ca aplicarea unei opera\:021bii \
+la fiecare elemente ale unui set de elemente, eliminarea duplicatelor, etc; ",
+ StyleBox["programarea orientat\[ACup] pe date ",
+  FontWeight->"Bold"],
+ "presupune definirea comportamentului programului prin construirea unelor \
+structuri de date concrete, deci, de exemplu, \[IHat]n loc de a desena o \
+linie de la X la Y, s-ar crea un obiect de linie cu pozi\:021biile pentru X \
+\:0219i Y. ",
+ StyleBox["Programarea logic\[ACup] ",
+  FontWeight->"Bold"],
+ "este cam o ciud\[ACup]\:021benie \:0219i se folose\:0219te doar pentru \
+programe logice cu unele scopuri specifice. Presupune definirea unor reguli \
+\:0219i folosirea lor pentru a dovedi corectitudinea programului."
+}], "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 
+   3.875763008479425*^9},ExpressionUUID->"5b486979-9aac-4f5f-aebc-\
+44a2559ff0f6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Paradigmele de programare \[IHat]n limbaje de programare", "Subsection",
+ CellChangeTimes->{{3.8757600811189013`*^9, 
+  3.8757600922300663`*^9}},ExpressionUUID->"ddc838f1-b2a4-4565-9950-\
+339e44212861"],
+
+Cell["\<\
+Paradigmele de programare se manifest\[ACup] \[IHat]n mediul limbajelor de \
+programare concrete. Un limbaj de programare concret, \[IHat]ns\[ACup], nu \
+este limitat la o singur\[ACup] paradigm\[ACup] sau o singur\[ACup] \
+subparadigm\[ACup] de programare, mereu se \[IHat]nt\[AHat]mpl\[ACup] \
+c\[ACup] un anumit limbaj combin\[ACup] mai multe paradigme, permit\[AHat]nd \
+folosirea conceptelor acelora care sunt relevante pentru problema concret\
+\[ACup] la un moment dat. \[CapitalIHat]nc\[ACup], fiecare paradigm\[ACup] \
+\[IHat]n timpul propriu a adus inova\:021bii sale. De exemplu, programarea \
+func\:021bional\[ACup] a introdus monade \:0219i procesarea datelor prin \
+compunerea func\:021biilor, iar programarea orientat\[ACup] pe date a adus \
+atributele aplicate la entit\[ACup]\:021bi diferite din program, conceptele \
+care sunt prezente \[IHat]n aproape orice limbaj modern imperativ. De \
+exemplu, limbajul C++, fiind \[IHat]n natur\[ACup] imperativ, orientat pe \
+obiecte, a mo\:0219tenit \:0219i posibilitatea de a programa procedural de la \
+C, au fost ad\[ACup]ugate elemente declarative, ca func\:021bii anonime \
+\:0219i range-uri (intervale sau iteratori), \:0219i elemente \
+program\[ACup]rii logice, anume concepte pentru template-uri. Limbajul \
+JavaScript, fiind imperativ \:0219i orientat pe obiecte, tot adaug\[ACup] \
+elemente func\:021bionale, reprezentate de a\:0219a func\:021bii ca map, \
+reduce \:0219i filter, \:0219i prin faptul c\[ACup] func\:021biile sunt de \
+prim\[ACup] clas\[ACup], adic\[ACup] pot fi operate ca valori, de exemplu, \
+returnate dintr-o alt\[ACup] func\:021bie pentru a ob\:021bine func\:021bii \
+de grad mai \[IHat]nalt. JavaScript mai adaug\[ACup] \:0219i operatorul \"...\
+\" care permite a copia obiecte \[IHat]n mod declarativ.  Limbajul imperativ \
+Rust este un limbaj modern procedural care a \[IHat]mprumutat ideea de \
+macro-uri ast de la Lisp, permite atribuirea func\:021biilor la structure, \
+permit\[AHat]ndu-le s\[ACup] fie invocate fie cu sintaxa invoc\[ACup]rii unei \
+metode pe obiect, fie ca o procedur\[ACup], deci ideea luat\[ACup] de la \
+limbaje de programare OO, dar introduce \:0219i idei cu totul noi, anume \
+borrow checker.  Limbajul Scala introduce conceptul nou de parametri \
+implicite, adic\[ACup] anumit context explicit care este dus unei \
+func\:021bii \[IHat]n mod implicit, \:0219i are un subsistem puternic de \
+tipuri care este bazat pe ideile program\[ACup]rii logice. Limbajele Odin \
+\:0219i Jai, \[IHat]n timpul \[IHat]n care se renun\:021b\[ACup] de \
+programarea orientat\[ACup] pe obiecte \:0219i colectorul de gunoi ubicuu \
+\[IHat]n limbajele OO, rezolv\[ACup] problema ducerii parametrilor comune \
+\[IHat]n procedure folosind un argument implicit de context, \:0219i rezolv\
+\[AHat]nd problema de serializare folosind un sistem puternic de \
+reflec\:021bie. Zig \:0219i Rust \[IHat]nlocuiesc modul de gestionare a \
+erorilor folosind excep\:021bii, comun pentru limbaje OO, cu folosirea \
+monadelor \:0219i o sintax\[ACup] laconic\[ACup] care permite lucrul \
+pl\[ACup]cut cu acestea. C# a fost primul limbaj care a introdus conceptul de \
+async-await, care permite a scrie programe asincrone \[IHat]n mod imperativ \
+descuind de fapt paradigma de programare asincron\[ACup], care a most \
+\[IHat]mprumutat\[ACup] \:0219i de a\:0219a limbaje ca Python, JavaScript, \
+Rust, C++ 20 \:0219i multe alte.\
+\>", "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+  3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+  3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+  3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+  3.8757610768681035`*^9}, {3.8757611100127044`*^9, 3.8757612901308575`*^9}, {
+  3.8757614896001005`*^9, 3.87576155991183*^9}, {3.8757616272973614`*^9, 
+  3.8757616367685328`*^9}, {3.875761670024065*^9, 3.8757618428517046`*^9}, {
+  3.875761879112389*^9, 3.875762062563489*^9}, {3.8757620991259904`*^9, 
+  3.8757623272276125`*^9}, {3.8757623583274717`*^9, 3.8757623947920322`*^9}, {
+  3.875762467158497*^9, 3.875762727290406*^9}, {3.87576289341224*^9, 
+  3.8757629593976297`*^9}, {3.875763134714738*^9, 3.8757631352224245`*^9}, {
+  3.87576320256598*^9, 3.875763221251482*^9}, {3.87576326829453*^9, 
+  3.8757632688172092`*^9}},ExpressionUUID->"880d07cd-f869-4a27-b578-\
+861f4c8863a7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Limbajul Wolfram", "Section",
+ CellChangeTimes->{{3.875763738135383*^9, 3.8757637464282813`*^9}, {
+  3.875768602145179*^9, 
+  3.875768603794156*^9}},ExpressionUUID->"201ce54c-206b-4413-8362-\
+4573e63e22eb"],
+
+Cell[CellGroupData[{
+
+Cell["Descrierea limbajului de programare Wolfram", "Subsection",
+ CellChangeTimes->{{3.875763801407446*^9, 3.8757638191035547`*^9}, {
+  3.875768607350968*^9, 
+  3.8757686147803955`*^9}},ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-\
+9b30fd0c80e8"],
+
+Cell["\<\
+Limbajul de programare Wolfram combin\[ACup] mai multe paradigme de \
+programare, concentr\[AHat]ndu-se mai mult la programarea func\:021bional\
+\[ACup], folosind tare \:0219i conceptul de programare simbolic\[ACup]. \
+Wolfram permite operarea cu func\:021bii ca valori, permite definirea func\
+\:021biilor anonime (numite pure din oarecare cauz\[ACup]), define\:0219te \
+shorthand-uri pentru opera\:021bii comune ca /@ \[IHat]n loc de Map, /; \
+\[IHat]n loc de Condition; are capacitatea de a \"redesena parantezele\" \
+folosind operatorul //, iar parantezele devin op\:021bionale pentru \
+func\:021bii cu un singur argument prin operatorul @. Wolfram nu permite \
+aplicarea func\:021biilor par\:021bial\[ACup] (currying) out-of-the-box, cum \
+admite, de exemplu, Haskell.\
+\>", "Text",
+ CellChangeTimes->{{3.87576382746441*^9, 3.875763899038362*^9}, {
+  3.8757639441585956`*^9, 3.875764124973318*^9}, {3.8757642109783897`*^9, 
+  3.8757642288993616`*^9}, {3.8757643113836*^9, 3.8757643133294024`*^9}, {
+  3.8757643503775997`*^9, 3.8757643711767993`*^9}, {3.8757644960949244`*^9, 
+  3.875764497167265*^9}, {3.8757645555823154`*^9, 3.875764587508666*^9}, {
+  3.8757652769074*^9, 
+  3.8757652965573063`*^9}},ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-\
+8c1fa8d94c7e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"x", "+", "y"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", " ", ":=", 
+   RowBox[{"f", "[", "1", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t0", " ", ":=", 
+   RowBox[{"t", "[", "0", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "t0", "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.875764145353775*^9, 3.8757642021178412`*^9}, {
+  3.875764432719925*^9, 3.8757644476167574`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "1", "]"}], "[", "0", "]"}]], "Output",
+ CellChangeTimes->{3.875764448541191*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
+}, Open  ]],
+
+Cell["\<\
+Autorul crede c\[ACup] Wolfram poate fi util pentru a vizualiza rapid unele \
+datel \:0219i a le analiza, \:0219i pentru a rezolva probleme matematice, dar \
+nu ar fi practic pentru aplica\:021bii \"reale\", ca serveri sau jocuri. \
+Wolfram, ca \:0219i libr\[ACup]riile de analiz\[ACup] a datelor \[IHat]n \
+Python, se str\[ACup]duie\:0219te s\[ACup] fac\[ACup] aplica\:021bii comune c\
+\[AHat]t mai simple, ceea ce nu \[IHat]nseamn\[ACup] c\[ACup] aplica\:021bii \
+mai avansate vor fi tot at\[AHat]t de simple. Cu toate c\[ACup] \
+func\:021biile de desenare a graficilor sunt u\:0219or de folosite \:0219i \
+destul de personalizabile, permit personalizarea p\[AHat]n\[ACup] la un \
+anumit punct de complexitate, dup\[ACup] ce ea devine mai compilcat\[ACup] \
+dec\[AHat]t desenarea de la zero \[IHat]ntr-un alt limbaj de programare. \
+Ideea este c\[ACup] limbajul nu este pentru orice fel de problem\[ACup] sau \
+aplica\:021bie, rezolv\[ACup] un set de probleme destul de str\[AHat]ns.\
+\>", "Text",
+ CellGroupingRules->{"NormalGrouping", Inherited},
+ CellChangeTimes->{{3.87576460064758*^9, 3.8757649840636196`*^9}, {
+  3.875766333713025*^9, 
+  3.875766365501463*^9}},ExpressionUUID->"6251ae4f-43f1-4423-8925-\
+cec75742d661"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Programarea simbolic\[ACup] \[IHat]n Wolfram", "Subsection",
+ CellChangeTimes->{{3.8757650100546246`*^9, 
+  3.875765018411483*^9}},ExpressionUUID->"373172f8-74f1-4220-9ebe-\
+2416dfc9e17a"],
+
+Cell[TextData[{
+ StyleBox["Urmeaz\[ACup] interpretarea autorului al acestui concept, deci \
+unele fapturi pot fi gre\:0219ite. ",
+  FontSlant->"Italic"],
+ "De fapt, programarea func\:021bional\[ACup] \[IHat]n Wolfram este sub capot\
+\[ACup] b\[ACup]zat\[ACup] pe programarea simbolic\[ACup]. Programarea \
+simbolic\[ACup] este ideea de a reprezenta codul \:0219i datele folosind \
+aceea\:0219i structur\[ACup] de date. \
+https://stackoverflow.com/a/4435720/9731532 Prin urmare, este u\:0219or de a \
+compune abstrac\:021bii pentru a crea codul. Unele instruc\:021biuni, ca, de \
+exemplu, Graphics, sunt interpretate \[IHat]n mod special \[IHat]n mediul \
+\[IHat]n care ruleaz\[ACup] programul. F\[ACup]r\[ACup] acest mediu ei arat\
+\[ACup] ori ca aplicarea unei func\:021bii, ori ca crearea unui tip de date, \
+dar func\:021bional ele sunt identice \[IHat]n acest context. Ideile program\
+\[ACup]rii simbolice ini\:021bial au ap\[ACup]rut \[IHat]n limbajul Lisp (= \
+list processor), unde \[IHat]ntregul program poate fi schimbat dinamic \
+\[IHat]n timp de rulare, deoarece acesta este reprezentat ca ni\:0219te \
+noduri \[IHat]ntr-o list\[ACup] dubl\[ACup] legat\[ACup]. Programul atunci \
+devine instruc\:021biunile de manipulare a acestor simboluri \[IHat]n moduri \
+diverse."
+}], "Text",
+ CellChangeTimes->{{3.8757653053938675`*^9, 3.8757653887825503`*^9}, {
+  3.8757654272128987`*^9, 3.875765553911928*^9}, {3.875765751379402*^9, 
+  3.875765854020235*^9}, {3.875765890156996*^9, 3.875766002989558*^9}, {
+  3.875766174764844*^9, 3.8757662135639668`*^9}, {3.875766258693194*^9, 
+  3.875766311649604*^9}},ExpressionUUID->"8ee255bd-1e65-4bbe-a991-\
+7bcf094c2f1a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Pattern-matching \[IHat]n Wolfram", "Subsection",
+ CellChangeTimes->{{3.875766495468479*^9, 
+  3.875766501595707*^9}},ExpressionUUID->"58a56aaa-7975-4ee4-a002-\
+f1c47d1347a7"],
+
+Cell["\<\
+Pattern-matching nu este un concept nou ad\[ACup]ugat de Wolfram. Se reg\
+\[ACup]se\:0219te destul de des \[IHat]n alte limbaje de programare, ca de \
+exemplu JavaScript \:0219i Python cu decompozi\:021bia obiectelor \:0219i \
+tuplurilor; C# cu decompozi\:021bia tuplurilor, switch-uri cu reguli \
+complexe, precum potrivirea unei reguli logice ca x < 7,  ori structura \
+concret\[ACup] a unui tablou, ca un tablou care se \[IHat]ncepe cu 7, de \
+exemplu; D cu potrivirea tipurilor sau simbolurilor \[IHat]n timpul de \
+compilare, folosind expresia \"is\"; Zig, Rust, V, Haskell, Elm, F# cu \
+potrivirea nativ\[ACup] a diferitor variante ale unei expresii sau ale unui \
+union discriminat. Wolfram aduce conceptul la un nivel nou, p\[ACup]trunz\
+\[AHat]nd \[IHat]ntregul limbaj cu aceast\[ACup] idee. De exemplu, \"tipurile\
+\" parametrilor func\:021biilor sunt constr\[AHat]nse conform unor \
+pattern-uri. De exemplu, urm\[ACup]toarea expresie define\:0219te o \
+func\:021bie cu un parametru, numit x, de orice tip, indicat de _. : \
+\[IHat]nseamn\[ACup] c\[ACup] urmeaz\[ACup] pattern-ul care trebuie s\[ACup] \
+se potriveasc\[ACup] pentru a rezolva supra\[IHat]nc\[ACup]rcarea dat\[ACup] \
+a func\:021biei.\
+\>", "Text",
+ CellChangeTimes->{{3.875766506430733*^9, 3.875766920748209*^9}, {
+  3.8757669646571856`*^9, 3.875767101276108*^9}, {3.8757671347884846`*^9, 
+  3.8757672310382504`*^9}},ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-\
+6afff5e19819"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x", ":", "_"}], "]"}], ":=", "x"}], ";"}]], "Input",
+ CellChangeTimes->{{3.875767114648879*^9, 
+  3.8757671331454945`*^9}},ExpressionUUID->"eaf103d9-1aa3-411d-861a-\
+b7c14d7ce298"],
+
+Cell["\<\
+De exemplu, dac\[ACup] acum definim \[IHat]nc\[ACup] o \
+supra\[IHat]nc\[ACup]rcare, unde se define\:0219te un alt pattern mai \
+concret, s-ar rezolva supra\[IHat]nc\[ACup]rcarea nou\[ACup] \[IHat]n cazul \
+\[IHat]n care argumentul se potrive\:0219te acestui pattern nou.\
+\>", "Text",
+ CellChangeTimes->{{3.8757672385506287`*^9, 3.8757672675947533`*^9}, {
+  3.875767312232282*^9, 
+  3.8757674004100175`*^9}},ExpressionUUID->"9cbd8da9-4d24-447e-b58b-\
+3883abc41f32"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x", ":", "_Integer"}], "]"}], ":=", 
+   RowBox[{"x", "+", "1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "2", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", "5.0", "]"}]}], "Input",
+ CellChangeTimes->{{3.8757672716432624`*^9, 3.875767347457604*^9}, {
+  3.875767791899089*^9, 3.8757677953199835`*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{
+  3.8757673482900953`*^9, {3.8757677930623727`*^9, 3.875767796660158*^9}},
+ CellLabel->"Out[64]=",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
+
+Cell[BoxData["5.`"], "Output",
+ CellChangeTimes->{
+  3.8757673482900953`*^9, {3.8757677930623727`*^9, 3.8757677966641564`*^9}},
+ CellLabel->"Out[65]=",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
+}, Open  ]],
+
+Cell["\<\
+_Integer \[IHat]nseamn\[ACup] c\[ACup] head-ul expresiei trebuie s\[ACup] fie \
+Integer. S-ar putea defini \:0219i un pattern mult mai complex, ca, de \
+exemplu, unde x trebuie s\[ACup] fie o list\[ACup], unde primul element se \
+imparte la 2.\
+\>", "Text",
+ CellChangeTimes->{{3.8757674371534057`*^9, 3.875767455951835*^9}, {
+  3.875767532267869*^9, 3.875767585095358*^9}, {3.8757676753807945`*^9, 
+  3.875767679852045*^9}},ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-\
+34e5917a1391"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{
+     RowBox[{"x", ":", 
+      RowBox[{"{", 
+       RowBox[{"n_", ",", "_"}], "}"}]}], "/;", 
+     RowBox[{"Divisible", "[", 
+      RowBox[{"n", ",", " ", "2"}], "]"}]}], "]"}], ":=", "\"\<hello\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"f", "[", 
+  RowBox[{"{", 
+   RowBox[{"2", ",", " ", "5"}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8757675890279417`*^9, 3.8757676264958797`*^9}, {
+  3.875767660655858*^9, 3.8757676849039345`*^9}, {3.875767716915236*^9, 
+  3.875767735625719*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
+
+Cell[BoxData["\<\"hello\"\>"], "Output",
+ CellChangeTimes->{
+  3.8757676281588583`*^9, {3.8757677229825044`*^9, 3.8757677371198034`*^9}},
+ CellLabel->"Out[58]=",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
+}, Open  ]],
+
+Cell["\<\
+Pattern-matching se folose\:0219te peste tot c\[AHat]nd are loc programarea \
+\[IHat]n Wolfram.\
+\>", "Text",
+ CellChangeTimes->{{3.8757679177206554`*^9, 
+  3.8757679613887825`*^9}},ExpressionUUID->"2d19e097-3fab-4954-a06a-\
+932ce1491ee1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sistemul Wolfram Mathematica", "Section",
+ CellChangeTimes->{{3.8757685702408075`*^9, 
+  3.875768576006258*^9}},ExpressionUUID->"7534d660-f9c5-4369-a20a-\
+7957e72264ea"],
+
+Cell[CellGroupData[{
+
+Cell["Descrierea general\[ACup] a sistemului Wolfram Mathematica", \
+"Subsection",
+ CellChangeTimes->{{3.8757685801117325`*^9, 
+  3.8757685934974933`*^9}},ExpressionUUID->"57d37574-153b-4ca2-9763-\
+f85052c2658a"],
+
+Cell["\<\
+Sistem Wolfram Mathematica este un mediu de programare \[IHat]n limbajul \
+Wolfram \:0219i operarea cu capacit\[ACup]\:021bile lui. Mathematica este ca \
+Jupyter notebook pentru Python sau Julia. Mathematica permite rularea codului \
+organizat \[IHat]n celule, \:0219i privirea rezultatelor execut\[ACup]rii \
+codului. Acestea pot fi ori ni\:0219te simboluri afi\:0219ate la \
+consol\[ACup], ori interpretarea lor de c\[ACup]tre sistem \[IHat]n forma de \
+grafici sau vizualiz\[ACup]ri diferite.
+Sistemul Mathematica are mai multe capacit\[ACup]\:021bi dec\[AHat]t rularea \
+codului, inclusiv tehnoredactarea, meniuri de ajutor pentru introducerea ecua\
+\:021biilor, etc. \[CapitalIHat]n sf\[AHat]r\:0219it, \[IHat]ntregul document \
+notebook poate fi convertat \[IHat]ntr-un PDF static.\
+\>", "Text",
+ CellChangeTimes->{{3.8757688400797434`*^9, 
+  3.8757691533519506`*^9}},ExpressionUUID->"fb633041-ac89-4118-9292-\
+ed3a74560cdf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{575.25, 636.},
+WindowMargins->{{-5.25, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"effd6f4f-99d4-4d6f-9331-31d44cb861de"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 234, 4, 160, "Title",ExpressionUUID->"5569aab6-d57e-4858-aab2-d9850387774b"],
+Cell[817, 28, 211, 4, 85, "Subtitle",ExpressionUUID->"5a103b70-f925-4eb4-b60a-24ef9a6ed117"],
+Cell[1031, 34, 184, 3, 31, "Subsubtitle",ExpressionUUID->"7ed57c85-8e68-4366-aaa5-a08ff4ed60f5"],
+Cell[1218, 39, 99, 1, 4, "PageBreak",ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1",
+ PageBreakBelow->True],
+Cell[CellGroupData[{
+Cell[1342, 44, 217, 3, 105, "Section",ExpressionUUID->"5f2beb92-3ada-4762-92a3-90f6d57ab33c"],
+Cell[CellGroupData[{
+Cell[1584, 51, 161, 3, 54, "Subsection",ExpressionUUID->"43db8621-d684-4227-a984-5e1bba05c347"],
+Cell[1748, 56, 975, 15, 242, "Text",ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-1981cac627f1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2760, 76, 249, 4, 54, "Subsection",ExpressionUUID->"171a4cb0-a4a6-4311-ae46-52956ccdcf19"],
+Cell[3012, 82, 4215, 83, 771, "Text",ExpressionUUID->"5b486979-9aac-4f5f-aebc-44a2559ff0f6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7264, 170, 208, 3, 54, "Subsection",ExpressionUUID->"ddc838f1-b2a4-4565-9950-339e44212861"],
+Cell[7475, 175, 4407, 61, 932, "Text",ExpressionUUID->"880d07cd-f869-4a27-b578-861f4c8863a7"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11931, 242, 212, 4, 67, "Section",ExpressionUUID->"201ce54c-206b-4413-8362-4573e63e22eb"],
+Cell[CellGroupData[{
+Cell[12168, 250, 244, 4, 54, "Subsection",ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-9b30fd0c80e8"],
+Cell[12415, 256, 1273, 20, 242, "Text",ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-8c1fa8d94c7e"],
+Cell[CellGroupData[{
+Cell[13713, 280, 610, 15, 105, "Input",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
+Cell[14326, 297, 204, 4, 32, "Output",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
+}, Open  ]],
+Cell[14545, 304, 1236, 19, 265, "Text",ExpressionUUID->"6251ae4f-43f1-4423-8925-cec75742d661",
+ CellGroupingRules->{"NormalGrouping", Inherited}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15818, 328, 194, 3, 54, "Subsection",ExpressionUUID->"373172f8-74f1-4220-9ebe-2416dfc9e17a"],
+Cell[16015, 333, 1664, 26, 334, "Text",ExpressionUUID->"8ee255bd-1e65-4bbe-a991-7bcf094c2f1a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17716, 364, 181, 3, 54, "Subsection",ExpressionUUID->"58a56aaa-7975-4ee4-a002-f1c47d1347a7"],
+Cell[17900, 369, 1460, 22, 357, "Text",ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-6afff5e19819"],
+Cell[19363, 393, 250, 7, 28, "Input",ExpressionUUID->"eaf103d9-1aa3-411d-861a-b7c14d7ce298"],
+Cell[19616, 402, 476, 9, 81, "Text",ExpressionUUID->"9cbd8da9-4d24-447e-b58b-3883abc41f32"],
+Cell[CellGroupData[{
+Cell[20117, 415, 465, 10, 67, "Input",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
+Cell[20585, 427, 202, 3, 32, "Output",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
+Cell[20790, 432, 206, 3, 32, "Output",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
+}, Open  ]],
+Cell[21011, 438, 492, 9, 81, "Text",ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-34e5917a1391"],
+Cell[CellGroupData[{
+Cell[21528, 451, 649, 17, 48, "Input",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
+Cell[22180, 470, 216, 3, 32, "Output",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
+}, Open  ]],
+Cell[22411, 476, 249, 6, 58, "Text",ExpressionUUID->"2d19e097-3fab-4954-a06a-932ce1491ee1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22709, 488, 175, 3, 67, "Section",ExpressionUUID->"7534d660-f9c5-4369-a20a-7957e72264ea"],
+Cell[CellGroupData[{
+Cell[22909, 495, 212, 4, 54, "Subsection",ExpressionUUID->"57d37574-153b-4ca2-9763-f85052c2658a"],
+Cell[23124, 501, 941, 15, 242, "Text",ExpressionUUID->"fb633041-ac89-4118-9292-ed3a74560cdf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
