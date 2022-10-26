@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30726,        654]
-NotebookOptionsPosition[     26316,        570]
-NotebookOutlinePosition[     26723,        586]
-CellTagsIndexPosition[     26680,        583]
+NotebookDataLength[     47714,        991]
+NotebookOptionsPosition[     41883,        892]
+NotebookOutlinePosition[     42289,        908]
+CellTagsIndexPosition[     42246,        905]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -61,15 +61,24 @@ a g\[AHat]ndi, folosite pentru a crea un program. Limbajele de programare \
 concrete la programator. Paradigmele de programare reprezint\[ACup] un set de \
 concepte sau un set de abstrac\:021bii sau limit\[ACup]ri \
 con\:0219tientizate, care ghideaz\[ACup] programatorul la solu\:021bii mai \
-bune sau \"corecte\" \[IHat]n scopul limbajului de programare folosit. 
+bune sau \"corecte\" \[IHat]n scopul limbajului de programare folosit. \
+\>", "Text",
+ CellChangeTimes->{{3.8757556988768024`*^9, 3.8757557689166985`*^9}, {
+   3.8757560508971615`*^9, 3.875756266638393*^9}, {3.875756325845954*^9, 
+   3.875756429270307*^9}, 
+   3.8757730143901386`*^9},ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-\
+1981cac627f1"],
+
+Cell["\<\
 \[CapitalIHat]n acest capitol se vor descrie paradigmele principale de \
 programare \:0219i vor fi men\:021bionate ni\:0219te limbaje de programare \
 concrete cunoscute de autor care le implementeaz\[ACup].\
 \>", "Text",
  CellChangeTimes->{{3.8757556988768024`*^9, 3.8757557689166985`*^9}, {
-  3.8757560508971615`*^9, 3.875756266638393*^9}, {3.875756325845954*^9, 
-  3.875756429270307*^9}},ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-\
-1981cac627f1"]
+   3.8757560508971615`*^9, 3.875756266638393*^9}, {3.875756325845954*^9, 
+   3.875756429270307*^9}, 
+   3.8757730182077885`*^9},ExpressionUUID->"c3ccb49d-cb96-4b77-8715-\
+96b3d28f4c46"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -80,11 +89,29 @@ Cell["Enumerarea principalelor paradigme de programare", "Subsection",
   3.8757559032860055`*^9}},ExpressionUUID->"171a4cb0-a4a6-4311-ae46-\
 52956ccdcf19"],
 
+Cell["\<\
+Paradigmele de programare au fost diverse chiar \[IHat]ncep\[AHat]nd cu \
+zilele de origine a conceptelor limbajelor de programare. \
+\>", "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, 
+   3.875773038560264*^9},ExpressionUUID->"5b486979-9aac-4f5f-aebc-\
+44a2559ff0f6"],
+
 Cell[TextData[{
- "Paradigmele de programare au fost diverse chiar \[IHat]ncep\[AHat]nd cu \
-zilele de origine a conceptelor limbajelor de programare. Prima \:0219i, f\
-\[ACup]r\[ACup] \[IHat]ndoial\[ACup], cea mai important\[ACup] \
-paradigm\[ACup] de programare este ",
+ "Prima \:0219i, f\[ACup]r\[ACup] \[IHat]ndoial\[ACup], cea mai important\
+\[ACup] paradigm\[ACup] de programare este ",
  StyleBox["programarea imperativ\[ACup]",
   FontWeight->"Bold"],
  ". Aceasta implic\[ACup] oferirea ",
@@ -104,16 +131,71 @@ Programarea imperativ\[ACup] con\:021bine dou\[ACup] subparadigme: ",
  "\:0219i ",
  StyleBox["programarea orientat\[ACup] pe obiecte",
   FontWeight->"Bold"],
- ". Programarea procedural\[ACup] presupune programarea procedurilor care \
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, 
+   3.8757730491667356`*^9},ExpressionUUID->"010d7e6d-a313-4f07-aaf0-\
+de7815ba08e5"],
+
+Cell["\<\
+Programarea procedural\[ACup] presupune programarea procedurilor care \
 reprezint\[ACup] unele ac\:021biuni performate pe baza sau cu datele de \
 intrare. Procedurile nu sunt legate direct la structuri de date, prin urmare \
 datele sunt mereu administrate \[IHat]n afar\[ACup] procedurilor care opereaz\
-\[ACup] pe baza lor. Programarea orientat\[ACup] pe obiecte presupune \
-cuplarea datelor cu procedurile, atribuindu-le numele nou de metode. \
-Programele atunci sunt reprezentate de obiecte separate care se \
-comunic\[ACup] prin \"mesaje\", adic\[ACup] invoc\[AHat]nd metode pe alte \
-obiecte. ",
- StyleBox["Programare declarativ\[ACup] ",
+\[ACup] pe baza lor. \
+\>", "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, 
+   3.875773055435878*^9},ExpressionUUID->"c70c646c-cfbb-40e0-8104-\
+510c172e4280"],
+
+Cell["\<\
+Programarea orientat\[ACup] pe obiecte presupune cuplarea datelor cu \
+procedurile, atribuindu-le numele nou de metode. Programele atunci sunt \
+reprezentate de obiecte separate care se comunic\[ACup] prin \"mesaje\", adic\
+\[ACup] invoc\[AHat]nd metode pe alte obiecte. \
+\>", "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, 
+   3.875773060156973*^9},ExpressionUUID->"71b6f1fe-e3a5-477d-8698-\
+a9c5ba59700f"],
+
+Cell[TextData[{
+ StyleBox["Programarea declarativ\[ACup] ",
   FontWeight->"Bold"],
  "presupune definirea ",
  StyleBox["structurii programului",
@@ -131,7 +213,26 @@ elemente logice, ca ",
  ". Programarea declarativ\[ACup] are ca scop abstractizarea \
 instruc\:021biunilor concrete, reprezent\[AHat]ndu-le la un nivel mai \
 \[IHat]nalt, uneori permit\[AHat]nd implementarea concret\[ACup] altor \
-sisteme. De exemplu, ",
+sisteme. "
+}], "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, {3.8757730623866014`*^9, 
+   3.8757730864358006`*^9}},ExpressionUUID->"f777aac5-ec40-4443-8ca5-\
+a5ee364c23df"],
+
+Cell[TextData[{
+ "De exemplu, ",
  StyleBox["programarea func\:021bional\[ACup] ",
   FontWeight->"Bold"],
  "reprezint\[ACup] algoritmele prin compunerea func\:021biilor pure care \
@@ -161,9 +262,37 @@ programe logice cu unele scopuri specifice. Presupune definirea unor reguli \
    3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
    3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
    3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
-   3.875760059410262*^9}, 
-   3.875763008479425*^9},ExpressionUUID->"5b486979-9aac-4f5f-aebc-\
-44a2559ff0f6"]
+   3.875760059410262*^9}, 3.875763008479425*^9, 3.8757730623866014`*^9, {
+   3.875773147260368*^9, 
+   3.8757731511119976`*^9}},ExpressionUUID->"f6f69bd3-5901-42a3-b01d-\
+f4469e9980eb"],
+
+Cell["\<\
+Merit\[ACup] s\[ACup] se men\:021bioneze faptul c\[ACup] folosirea abstrac\
+\:021biilor \[IHat]n general introduce elemente declarative \[IHat]n orice \
+program. Abstrac\:021biile de fapt \[IHat]nseamn\[ACup] c\[ACup] careva lucru \
+este ascuns sub un alt nume, ori c\[ACup] o opera\:021bie sau un concept este \
+o compunere a mai multor concepte mici. Deoarece orice program sau sistem \
+numaidec\[AHat]t va defini abstrac\:021biile sale, s-ar putea  spune c\[ACup] \
+orice program este un program declarativ, \[IHat]ntr-o oarecare m\[ACup]sur\
+\[ACup].\
+\>", "Text",
+ CellChangeTimes->{{3.875755941465508*^9, 3.87575601018322*^9}, {
+   3.8757564814172153`*^9, 3.875756498134927*^9}, {3.875756546321272*^9, 
+   3.8757566690477433`*^9}, {3.8757567427863665`*^9, 
+   3.8757569237979655`*^9}, {3.875756965233467*^9, 3.875757009186418*^9}, {
+   3.875757067786353*^9, 3.8757575629686127`*^9}, {3.875757596051253*^9, 
+   3.8757576622035394`*^9}, {3.875757694738517*^9, 3.8757577226443443`*^9}, {
+   3.8757577542488947`*^9, 3.8757577864470806`*^9}, {3.8757578408406034`*^9, 
+   3.875758125291548*^9}, {3.8757581643744974`*^9, 3.8757582889128523`*^9}, {
+   3.8757583534771185`*^9, 3.8757584168351293`*^9}, {3.875758454053224*^9, 
+   3.87575845860742*^9}, {3.8757585043052964`*^9, 3.875758520817135*^9}, {
+   3.8757593447600694`*^9, 3.8757593459373436`*^9}, {3.8757594496555166`*^9, 
+   3.87575946108748*^9}, 3.875759942379285*^9, {3.8757599848771305`*^9, 
+   3.875760059410262*^9}, 3.875763008479425*^9, 3.8757730623866014`*^9, {
+   3.875773147260368*^9, 
+   3.8757733962631283`*^9}},ExpressionUUID->"725c5a60-3f49-45fe-a298-\
+7262f8111755"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -185,56 +314,238 @@ folosirea conceptelor acelora care sunt relevante pentru problema concret\
 func\:021bional\[ACup] a introdus monade \:0219i procesarea datelor prin \
 compunerea func\:021biilor, iar programarea orientat\[ACup] pe date a adus \
 atributele aplicate la entit\[ACup]\:021bi diferite din program, conceptele \
-care sunt prezente \[IHat]n aproape orice limbaj modern imperativ. De \
-exemplu, limbajul C++, fiind \[IHat]n natur\[ACup] imperativ, orientat pe \
-obiecte, a mo\:0219tenit \:0219i posibilitatea de a programa procedural de la \
-C, au fost ad\[ACup]ugate elemente declarative, ca func\:021bii anonime \
-\:0219i range-uri (intervale sau iteratori), \:0219i elemente \
-program\[ACup]rii logice, anume concepte pentru template-uri. Limbajul \
-JavaScript, fiind imperativ \:0219i orientat pe obiecte, tot adaug\[ACup] \
-elemente func\:021bionale, reprezentate de a\:0219a func\:021bii ca map, \
-reduce \:0219i filter, \:0219i prin faptul c\[ACup] func\:021biile sunt de \
-prim\[ACup] clas\[ACup], adic\[ACup] pot fi operate ca valori, de exemplu, \
-returnate dintr-o alt\[ACup] func\:021bie pentru a ob\:021bine func\:021bii \
-de grad mai \[IHat]nalt. JavaScript mai adaug\[ACup] \:0219i operatorul \"...\
-\" care permite a copia obiecte \[IHat]n mod declarativ.  Limbajul imperativ \
-Rust este un limbaj modern procedural care a \[IHat]mprumutat ideea de \
-macro-uri ast de la Lisp, permite atribuirea func\:021biilor la structure, \
-permit\[AHat]ndu-le s\[ACup] fie invocate fie cu sintaxa invoc\[ACup]rii unei \
-metode pe obiect, fie ca o procedur\[ACup], deci ideea luat\[ACup] de la \
-limbaje de programare OO, dar introduce \:0219i idei cu totul noi, anume \
-borrow checker.  Limbajul Scala introduce conceptul nou de parametri \
-implicite, adic\[ACup] anumit context explicit care este dus unei \
-func\:021bii \[IHat]n mod implicit, \:0219i are un subsistem puternic de \
-tipuri care este bazat pe ideile program\[ACup]rii logice. Limbajele Odin \
-\:0219i Jai, \[IHat]n timpul \[IHat]n care se renun\:021b\[ACup] de \
-programarea orientat\[ACup] pe obiecte \:0219i colectorul de gunoi ubicuu \
-\[IHat]n limbajele OO, rezolv\[ACup] problema ducerii parametrilor comune \
-\[IHat]n procedure folosind un argument implicit de context, \:0219i rezolv\
-\[AHat]nd problema de serializare folosind un sistem puternic de \
-reflec\:021bie. Zig \:0219i Rust \[IHat]nlocuiesc modul de gestionare a \
-erorilor folosind excep\:021bii, comun pentru limbaje OO, cu folosirea \
-monadelor \:0219i o sintax\[ACup] laconic\[ACup] care permite lucrul \
-pl\[ACup]cut cu acestea. C# a fost primul limbaj care a introdus conceptul de \
-async-await, care permite a scrie programe asincrone \[IHat]n mod imperativ \
-descuind de fapt paradigma de programare asincron\[ACup], care a most \
-\[IHat]mprumutat\[ACup] \:0219i de a\:0219a limbaje ca Python, JavaScript, \
-Rust, C++ 20 \:0219i multe alte.\
+care sunt prezente \[IHat]n aproape orice limbaj modern imperativ.\
 \>", "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQnRX9/2/OgzeObDc5RHOB9JWql8og+l1OvRWIVpgY
+5wiiy/58jQDRpcvKMkF03mzpbLC47MlCED2N5QaYdnmUVgaiG4/PBtPCGQeq
+QPQffZeJIJrNxHgViN6m+3cTWLw5czeIvjR9xh4QrXL0wAEQreUYfQ1Eb5zx
++BaIluK49BFEy3KkfAPRszyeC+UB6WVVp8RAdEhEpDSIzhBKVQHRTN4vXUC0
+kOHaSBCdtPNNIohWun+tHERLyT0H000yQQ0gWoVnRROIPpXT2QGip6jNAtNq
+rac9ioG0nspaTxANAJ00p+8=
+  "],ExpressionUUID->"880d07cd-f869-4a27-b578-861f4c8863a7"],
+
+Cell[TextData[{
+ "De exemplu, limbajul ",
+ StyleBox["C++",
+  FontWeight->"Bold"],
+ ", fiind \[IHat]n natur\[ACup] imperativ, orientat pe obiecte, a \
+mo\:0219tenit \:0219i posibilitatea de a programa procedural de la C, au fost \
+ad\[ACup]ugate elemente declarative, ca f",
+ StyleBox["unc\:021bii anonime \:0219i range-uri",
+  FontSlant->"Italic"],
+ " (intervale sau iteratori), \:0219i elemente program\[ACup]rii logice, \
+anume ",
+ StyleBox["concepte",
+  FontSlant->"Italic"],
+ " pentru template-uri. "
+}], "Text",
  CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
-  3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
-  3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
-  3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
-  3.8757610768681035`*^9}, {3.8757611100127044`*^9, 3.8757612901308575`*^9}, {
-  3.8757614896001005`*^9, 3.87576155991183*^9}, {3.8757616272973614`*^9, 
-  3.8757616367685328`*^9}, {3.875761670024065*^9, 3.8757618428517046`*^9}, {
-  3.875761879112389*^9, 3.875762062563489*^9}, {3.8757620991259904`*^9, 
-  3.8757623272276125`*^9}, {3.8757623583274717`*^9, 3.8757623947920322`*^9}, {
-  3.875762467158497*^9, 3.875762727290406*^9}, {3.87576289341224*^9, 
-  3.8757629593976297`*^9}, {3.875763134714738*^9, 3.8757631352224245`*^9}, {
-  3.87576320256598*^9, 3.875763221251482*^9}, {3.87576326829453*^9, 
-  3.8757632688172092`*^9}},ExpressionUUID->"880d07cd-f869-4a27-b578-\
-861f4c8863a7"]
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 
+   3.875773422675872*^9},ExpressionUUID->"be8fe515-f59b-4e7a-9687-\
+80c608bb85e1"],
+
+Cell[TextData[{
+ "Limbajul ",
+ StyleBox["JavaScript",
+  FontWeight->"Bold"],
+ ", fiind imperativ \:0219i orientat pe obiecte, tot adaug\[ACup] elemente \
+func\:021bionale, reprezentate de a\:0219a func\:021bii ca ",
+ StyleBox["map",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["reduce",
+  FontSlant->"Italic"],
+ " \:0219i ",
+ StyleBox["filter",
+  FontSlant->"Italic"],
+ ", \:0219i prin faptul c\[ACup] ",
+ StyleBox["func\:021biile sunt de prim\[ACup] clas\[ACup]",
+  FontSlant->"Italic"],
+ ", adic\[ACup] pot fi operate ca valori, de exemplu, returnate dintr-o alt\
+\[ACup] func\:021bie pentru a ob\:021bine func\:021bii de grad mai \
+\[IHat]nalt. JavaScript mai adaug\[ACup] \:0219i ",
+ StyleBox["operatorul \"...\"",
+  FontSlant->"Italic"],
+ " care permite a copia obiecte \[IHat]n mod declarativ.  "
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQnRX9/2/OgzeObDc5RHOB9JWql8og+l1OvRWIVpgY
+5wiiy/58jQDRpcvKMkF03mzpbLC47MlCED2N5QaYdnmUVgaiG4/PBtPCGQeq
+QPQffZeJIJrNxHgViN6m+3cTWLw5czeIvjR9xh4QrXL0wAEQreUYfQ1Eb5zx
++BaIluK49BFEy3KkfAPRszyeC+UB6WVVp8RAdEhEpDSIzhBKVQHRTN4vXUC0
+kOHaSBCdtPNNIohWun+tHERLyT0H000yQQ0gWoVnRROIPpXT2QGip6jNAtNq
+rac9ikH8bXaeILpN/VsdiN52TrMRRAMAeY+xyA==
+  "],ExpressionUUID->"af92c018-ecf1-4a13-8189-9c6782da8dfc"],
+
+Cell[TextData[{
+ "Limbajul imperativ ",
+ StyleBox["Rust",
+  FontWeight->"Bold"],
+ " este un limbaj modern procedural care a \[IHat]mprumutat ideea de ",
+ StyleBox["macro-uri ast",
+  FontSlant->"Italic"],
+ " de la Lisp, permite ",
+ StyleBox["atribuirea func\:021biilor la structure",
+  FontSlant->"Italic"],
+ ", permit\[AHat]ndu-le s\[ACup] fie invocate fie cu sintaxa invoc\[ACup]rii \
+unei metode pe obiect, fie ca o procedur\[ACup], deci ideea luat\[ACup] de la \
+limbaje de programare OO, dar introduce \:0219i idei cu totul noi, anume ",
+ StyleBox["borrow checker",
+  FontSlant->"Italic"],
+ ".  "
+}], "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 3.8757734316923246`*^9, 
+   3.875773464721997*^9},ExpressionUUID->"6a7a6d0a-a7d7-4b63-acfd-\
+532b82cfd79b"],
+
+Cell[TextData[{
+ "Limbajul ",
+ StyleBox["Scala",
+  FontWeight->"Bold"],
+ " introduce conceptul nou de ",
+ StyleBox["parametri implici\:021bi",
+  FontSlant->"Italic"],
+ ", adic\[ACup] anumit context explicit care este dus unei func\:021bii \
+\[IHat]n mod implicit, \:0219i are un subsistem puternic de tipuri care este \
+bazat pe ideile program\[ACup]rii logice."
+}], "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 3.8757734316923246`*^9, {3.8757734715138197`*^9, 
+   3.8757734801824837`*^9}, {3.87577355802159*^9, 
+   3.875773560407111*^9}},ExpressionUUID->"641ae80f-b68e-49e1-8b02-\
+1f94266f7149"],
+
+Cell[TextData[{
+ "Limbajele ",
+ StyleBox["Odin",
+  FontWeight->"Bold"],
+ " \:0219i ",
+ StyleBox["Jai",
+  FontWeight->"Bold"],
+ ", \[IHat]n timpul \[IHat]n care se renun\:021b\[ACup] de programarea \
+orientat\[ACup] pe obiecte \:0219i colectorul de gunoi ubicuu \[IHat]n \
+limbajele OO, rezolv\[ACup] problema ducerii parametrilor comune \[IHat]n \
+procedure folosind ",
+ StyleBox["un argument implicit de context",
+  FontSlant->"Italic"],
+ ", \:0219i rezolv\[AHat]nd problema de serializare folosind un sistem \
+puternic de ",
+ StyleBox["reflec\:021bie",
+  FontSlant->"Italic"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 3.8757734316923246`*^9, {3.875773481695551*^9, 
+   3.8757734887981806`*^9}},ExpressionUUID->"994de2f6-0adc-4d73-838c-\
+e63ae87f5051"],
+
+Cell[TextData[{
+ StyleBox["Zig",
+  FontWeight->"Bold"],
+ " \:0219i ",
+ StyleBox["Rust",
+  FontWeight->"Bold"],
+ " \[IHat]nlocuiesc modul de gestionare a erorilor folosind excep\:021bii, \
+comun pentru limbaje OO, cu ",
+ StyleBox["folosirea monadelor ",
+  FontSlant->"Italic"],
+ "\:0219i o sintax\[ACup] laconic\[ACup] care permite lucrul pl\[ACup]cut cu \
+acestea. "
+}], "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 3.8757734316923246`*^9, {3.875773481695551*^9, 
+   3.875773507451701*^9}},ExpressionUUID->"f03539b5-28ac-487f-9492-\
+821b753a4223"],
+
+Cell[TextData[{
+ StyleBox["C#",
+  FontWeight->"Bold"],
+ " a fost primul limbaj care a introdus conceptul de ",
+ StyleBox["async-await",
+  FontSlant->"Italic"],
+ ", care permite a scrie programe asincrone \[IHat]n mod imperativ descuind \
+de fapt paradigma de programare asincron\[ACup], care a most \[IHat]mprumutat\
+\[ACup] \:0219i de a\:0219a limbaje ca Python, JavaScript, Rust, C++ 20 \
+\:0219i multe alte."
+}], "Text",
+ CellChangeTimes->{{3.875760111979909*^9, 3.875760296276492*^9}, {
+   3.8757604152962437`*^9, 3.875760595982047*^9}, {3.8757606509552155`*^9, 
+   3.875760839687068*^9}, {3.8757609717078195`*^9, 3.8757609848627234`*^9}, {
+   3.8757610382848463`*^9, 3.87576103875056*^9}, {3.8757610752151203`*^9, 
+   3.8757610768681035`*^9}, {3.8757611100127044`*^9, 
+   3.8757612901308575`*^9}, {3.8757614896001005`*^9, 3.87576155991183*^9}, {
+   3.8757616272973614`*^9, 3.8757616367685328`*^9}, {3.875761670024065*^9, 
+   3.8757618428517046`*^9}, {3.875761879112389*^9, 3.875762062563489*^9}, {
+   3.8757620991259904`*^9, 3.8757623272276125`*^9}, {3.8757623583274717`*^9, 
+   3.8757623947920322`*^9}, {3.875762467158497*^9, 3.875762727290406*^9}, {
+   3.87576289341224*^9, 3.8757629593976297`*^9}, {3.875763134714738*^9, 
+   3.8757631352224245`*^9}, {3.87576320256598*^9, 3.875763221251482*^9}, {
+   3.87576326829453*^9, 3.8757632688172092`*^9}, {3.8757729983600035`*^9, 
+   3.8757730019597874`*^9}, 3.8757734316923246`*^9, 
+   3.875773481695551*^9},ExpressionUUID->"02bc032c-43eb-429e-9f3e-\
+23eceb00d796"]
 }, Open  ]]
 }, Open  ]],
 
@@ -260,20 +571,20 @@ programare, concentr\[AHat]ndu-se mai mult la programarea func\:021bional\
 \[ACup], folosind tare \:0219i conceptul de programare simbolic\[ACup]. \
 Wolfram permite operarea cu func\:021bii ca valori, permite definirea func\
 \:021biilor anonime (numite pure din oarecare cauz\[ACup]), define\:0219te \
-shorthand-uri pentru opera\:021bii comune ca /@ \[IHat]n loc de Map, /; \
-\[IHat]n loc de Condition; are capacitatea de a \"redesena parantezele\" \
-folosind operatorul //, iar parantezele devin op\:021bionale pentru \
-func\:021bii cu un singur argument prin operatorul @. Wolfram nu permite \
-aplicarea func\:021biilor par\:021bial\[ACup] (currying) out-of-the-box, cum \
-admite, de exemplu, Haskell.\
+shorthand-uri pentru opera\:021bii comune ca \"/@\" \[IHat]n loc de \"Map\", \
+\"/;\" \[IHat]n loc de \"Condition\"; are capacitatea de a \"redesena \
+parantezele\" folosind operatorul \"//\", iar parantezele devin \
+op\:021bionale pentru func\:021bii cu un singur argument prin operatorul \
+\"@\". Wolfram nu permite aplicarea func\:021biilor par\:021bial\[ACup] \
+(currying) out-of-the-box, cum admite, de exemplu, Haskell.\
 \>", "Text",
  CellChangeTimes->{{3.87576382746441*^9, 3.875763899038362*^9}, {
   3.8757639441585956`*^9, 3.875764124973318*^9}, {3.8757642109783897`*^9, 
   3.8757642288993616`*^9}, {3.8757643113836*^9, 3.8757643133294024`*^9}, {
   3.8757643503775997`*^9, 3.8757643711767993`*^9}, {3.8757644960949244`*^9, 
   3.875764497167265*^9}, {3.8757645555823154`*^9, 3.875764587508666*^9}, {
-  3.8757652769074*^9, 
-  3.8757652965573063`*^9}},ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-\
+  3.8757652769074*^9, 3.8757652965573063`*^9}, {3.875773644930095*^9, 
+  3.875773664384123*^9}},ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-\
 8c1fa8d94c7e"],
 
 Cell[CellGroupData[{
@@ -333,30 +644,31 @@ Cell["Programarea simbolic\[ACup] \[IHat]n Wolfram", "Subsection",
 
 Cell[TextData[{
  StyleBox["Urmeaz\[ACup] interpretarea autorului al acestui concept, deci \
-unele fapturi pot fi gre\:0219ite. ",
+unele fapturi pot fi gre\:0219ite. \
+https://stackoverflow.com/a/4435720/9731532\n",
   FontSlant->"Italic"],
  "De fapt, programarea func\:021bional\[ACup] \[IHat]n Wolfram este sub capot\
 \[ACup] b\[ACup]zat\[ACup] pe programarea simbolic\[ACup]. Programarea \
 simbolic\[ACup] este ideea de a reprezenta codul \:0219i datele folosind \
-aceea\:0219i structur\[ACup] de date. \
-https://stackoverflow.com/a/4435720/9731532 Prin urmare, este u\:0219or de a \
-compune abstrac\:021bii pentru a crea codul. Unele instruc\:021biuni, ca, de \
-exemplu, Graphics, sunt interpretate \[IHat]n mod special \[IHat]n mediul \
-\[IHat]n care ruleaz\[ACup] programul. F\[ACup]r\[ACup] acest mediu ei arat\
-\[ACup] ori ca aplicarea unei func\:021bii, ori ca crearea unui tip de date, \
-dar func\:021bional ele sunt identice \[IHat]n acest context. Ideile program\
-\[ACup]rii simbolice ini\:021bial au ap\[ACup]rut \[IHat]n limbajul Lisp (= \
-list processor), unde \[IHat]ntregul program poate fi schimbat dinamic \
-\[IHat]n timp de rulare, deoarece acesta este reprezentat ca ni\:0219te \
-noduri \[IHat]ntr-o list\[ACup] dubl\[ACup] legat\[ACup]. Programul atunci \
-devine instruc\:021biunile de manipulare a acestor simboluri \[IHat]n moduri \
-diverse."
+aceea\:0219i structur\[ACup] de date comun\[ACup].  Prin urmare, este \
+u\:0219or s\[ACup] se compun\[ACup] abstrac\:021bii pentru a crea codul. \
+Unele instruc\:021biuni, ca, de exemplu, \"Graphics\", sunt interpretate \
+\[IHat]n mod special \[IHat]n mediul \[IHat]n care ruleaz\[ACup] programul. F\
+\[ACup]r\[ACup] acest mediu ei arat\[ACup] ori ca aplicarea unei \
+func\:021bii, ori ca crearea unui tip de date, dar func\:021bional ele sunt \
+identice \[IHat]n acest context. Ideile program\[ACup]rii simbolice \
+ini\:021bial au ap\[ACup]rut \[IHat]n limbajul Lisp (= list processor), unde \
+\[IHat]ntregul program poate fi schimbat dinamic \[IHat]n timp de rulare, \
+deoarece acesta este reprezentat ca ni\:0219te noduri \[IHat]ntr-o \
+list\[ACup] dubl\[ACup] legat\[ACup]. Programul atunci devine \
+instruc\:021biunile de manipulare a acestor simboluri \[IHat]n moduri diverse."
 }], "Text",
  CellChangeTimes->{{3.8757653053938675`*^9, 3.8757653887825503`*^9}, {
   3.8757654272128987`*^9, 3.875765553911928*^9}, {3.875765751379402*^9, 
   3.875765854020235*^9}, {3.875765890156996*^9, 3.875766002989558*^9}, {
   3.875766174764844*^9, 3.8757662135639668`*^9}, {3.875766258693194*^9, 
-  3.875766311649604*^9}},ExpressionUUID->"8ee255bd-1e65-4bbe-a991-\
+  3.875766311649604*^9}, {3.875773685406184*^9, 
+  3.8757737577286777`*^9}},ExpressionUUID->"8ee255bd-1e65-4bbe-a991-\
 7bcf094c2f1a"]
 }, Open  ]],
 
@@ -372,24 +684,34 @@ Pattern-matching nu este un concept nou ad\[ACup]ugat de Wolfram. Se reg\
 \[ACup]se\:0219te destul de des \[IHat]n alte limbaje de programare, ca de \
 exemplu JavaScript \:0219i Python cu decompozi\:021bia obiectelor \:0219i \
 tuplurilor; C# cu decompozi\:021bia tuplurilor, switch-uri cu reguli \
-complexe, precum potrivirea unei reguli logice ca x < 7,  ori structura \
+complexe, precum potrivirea unei reguli logice ca \"x < 7\",  ori structura \
 concret\[ACup] a unui tablou, ca un tablou care se \[IHat]ncepe cu 7, de \
 exemplu; D cu potrivirea tipurilor sau simbolurilor \[IHat]n timpul de \
 compilare, folosind expresia \"is\"; Zig, Rust, V, Haskell, Elm, F# cu \
 potrivirea nativ\[ACup] a diferitor variante ale unei expresii sau ale unui \
-union discriminat. Wolfram aduce conceptul la un nivel nou, p\[ACup]trunz\
-\[AHat]nd \[IHat]ntregul limbaj cu aceast\[ACup] idee. De exemplu, \"tipurile\
-\" parametrilor func\:021biilor sunt constr\[AHat]nse conform unor \
-pattern-uri. De exemplu, urm\[ACup]toarea expresie define\:0219te o \
-func\:021bie cu un parametru, numit x, de orice tip, indicat de _. : \
-\[IHat]nseamn\[ACup] c\[ACup] urmeaz\[ACup] pattern-ul care trebuie s\[ACup] \
-se potriveasc\[ACup] pentru a rezolva supra\[IHat]nc\[ACup]rcarea dat\[ACup] \
-a func\:021biei.\
+union discriminat.\
 \>", "Text",
  CellChangeTimes->{{3.875766506430733*^9, 3.875766920748209*^9}, {
   3.8757669646571856`*^9, 3.875767101276108*^9}, {3.8757671347884846`*^9, 
-  3.8757672310382504`*^9}},ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-\
+  3.8757672310382504`*^9}, {3.8757737884157915`*^9, 
+  3.87577381009345*^9}},ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-\
 6afff5e19819"],
+
+Cell["\<\
+Wolfram aduce conceptul la un nivel nou, p\[ACup]trunz\[AHat]nd \
+\[IHat]ntregul limbaj cu aceast\[ACup] idee. De exemplu, \"tipurile\" \
+parametrilor func\:021biilor sunt constr\[AHat]nse conform unor pattern-uri. \
+De exemplu, urm\[ACup]toarea expresie define\:0219te o func\:021bie cu un \
+parametru, numit \"x\", de orice tip, indicat de \"_\". \":\" \[IHat]nseamn\
+\[ACup] c\[ACup] urmeaz\[ACup] pattern-ul care trebuie s\[ACup] se potriveasc\
+\[ACup] pentru a rezolva supra\[IHat]nc\[ACup]rcarea dat\[ACup] a \
+func\:021biei.\
+\>", "Text",
+ CellChangeTimes->{{3.875766506430733*^9, 3.875766920748209*^9}, {
+  3.8757669646571856`*^9, 3.875767101276108*^9}, {3.8757671347884846`*^9, 
+  3.8757672310382504`*^9}, {3.8757737884157915`*^9, 
+  3.8757738291837034`*^9}},ExpressionUUID->"8217b818-b156-4d32-be0e-\
+b77258b54a65"],
 
 Cell[BoxData[
  RowBox[{
@@ -568,7 +890,7 @@ business-ului \:0219i continuitatea acestui software. \
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{575.25, 636.},
+WindowSize->{877.5, 636.},
 WindowMargins->{{-5.25, Automatic}, {Automatic, 0}},
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
@@ -589,70 +911,85 @@ Cell[CellGroupData[{
 Cell[580, 22, 234, 4, 160, "Title",ExpressionUUID->"5569aab6-d57e-4858-aab2-d9850387774b"],
 Cell[817, 28, 211, 4, 85, "Subtitle",ExpressionUUID->"5a103b70-f925-4eb4-b60a-24ef9a6ed117"],
 Cell[1031, 34, 184, 3, 31, "Subsubtitle",ExpressionUUID->"7ed57c85-8e68-4366-aaa5-a08ff4ed60f5"],
-Cell[1218, 39, 99, 1, 4, "PageBreak",ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1",
+Cell[1218, 39, 99, 1, 1, "PageBreak",ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1",
  PageBreakBelow->True],
 Cell[CellGroupData[{
 Cell[1342, 44, 217, 3, 105, "Section",ExpressionUUID->"5f2beb92-3ada-4762-92a3-90f6d57ab33c"],
 Cell[CellGroupData[{
 Cell[1584, 51, 161, 3, 54, "Subsection",ExpressionUUID->"43db8621-d684-4227-a984-5e1bba05c347"],
-Cell[1748, 56, 975, 15, 242, "Text",ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-1981cac627f1"]
+Cell[1748, 56, 798, 13, 173, "Text",ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-1981cac627f1"],
+Cell[2549, 71, 487, 9, 81, "Text",ExpressionUUID->"c3ccb49d-cb96-4b77-8715-96b3d28f4c46"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2760, 76, 249, 4, 54, "Subsection",ExpressionUUID->"171a4cb0-a4a6-4311-ae46-52956ccdcf19"],
-Cell[3012, 82, 4215, 83, 771, "Text",ExpressionUUID->"5b486979-9aac-4f5f-aebc-44a2559ff0f6"]
+Cell[3073, 85, 249, 4, 54, "Subsection",ExpressionUUID->"171a4cb0-a4a6-4311-ae46-52956ccdcf19"],
+Cell[3325, 91, 1168, 18, 58, "Text",ExpressionUUID->"5b486979-9aac-4f5f-aebc-44a2559ff0f6"],
+Cell[4496, 111, 1969, 38, 196, "Text",ExpressionUUID->"010d7e6d-a313-4f07-aaf0-de7815ba08e5"],
+Cell[6468, 151, 1361, 21, 104, "Text",ExpressionUUID->"c70c646c-cfbb-40e0-8104-510c172e4280"],
+Cell[7832, 174, 1307, 20, 81, "Text",ExpressionUUID->"71b6f1fe-e3a5-477d-8698-a9c5ba59700f"],
+Cell[9142, 196, 1688, 35, 81, "Text",ExpressionUUID->"f777aac5-ec40-4443-8ca5-a5ee364c23df"],
+Cell[10833, 233, 2014, 34, 150, "Text",ExpressionUUID->"f6f69bd3-5901-42a3-b01d-f4469e9980eb"],
+Cell[12850, 269, 1644, 25, 104, "Text",ExpressionUUID->"725c5a60-3f49-45fe-a298-7262f8111755"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7264, 170, 208, 3, 54, "Subsection",ExpressionUUID->"ddc838f1-b2a4-4565-9950-339e44212861"],
-Cell[7475, 175, 4407, 61, 932, "Text",ExpressionUUID->"880d07cd-f869-4a27-b578-861f4c8863a7"]
+Cell[14531, 299, 208, 3, 54, "Subsection",ExpressionUUID->"ddc838f1-b2a4-4565-9950-339e44212861"],
+Cell[14742, 304, 1352, 21, 173, "Text",ExpressionUUID->"880d07cd-f869-4a27-b578-861f4c8863a7"],
+Cell[16097, 327, 1584, 30, 81, "Text",ExpressionUUID->"be8fe515-f59b-4e7a-9687-80c608bb85e1"],
+Cell[17684, 359, 1255, 31, 104, "Text",ExpressionUUID->"af92c018-ecf1-4a13-8189-9c6782da8dfc"],
+Cell[18942, 392, 1704, 32, 81, "Text",ExpressionUUID->"6a7a6d0a-a7d7-4b63-acfd-532b82cfd79b"],
+Cell[20649, 426, 1543, 27, 58, "Text",ExpressionUUID->"641ae80f-b68e-49e1-8b02-1f94266f7149"],
+Cell[22195, 455, 1714, 34, 81, "Text",ExpressionUUID->"994de2f6-0adc-4d73-838c-e63ae87f5051"],
+Cell[23912, 491, 1494, 28, 58, "Text",ExpressionUUID->"f03539b5-28ac-487f-9492-821b753a4223"],
+Cell[25409, 521, 1515, 26, 81, "Text",ExpressionUUID->"02bc032c-43eb-429e-9f3e-23eceb00d796"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11931, 242, 212, 4, 67, "Section",ExpressionUUID->"201ce54c-206b-4413-8362-4573e63e22eb"],
+Cell[26973, 553, 212, 4, 67, "Section",ExpressionUUID->"201ce54c-206b-4413-8362-4573e63e22eb"],
 Cell[CellGroupData[{
-Cell[12168, 250, 244, 4, 54, "Subsection",ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-9b30fd0c80e8"],
-Cell[12415, 256, 1273, 20, 242, "Text",ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-8c1fa8d94c7e"],
+Cell[27210, 561, 244, 4, 54, "Subsection",ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-9b30fd0c80e8"],
+Cell[27457, 567, 1343, 20, 150, "Text",ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-8c1fa8d94c7e"],
 Cell[CellGroupData[{
-Cell[13713, 280, 610, 15, 105, "Input",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
-Cell[14326, 297, 204, 4, 32, "Output",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
+Cell[28825, 591, 610, 15, 105, "Input",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
+Cell[29438, 608, 204, 4, 32, "Output",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
 }, Open  ]],
-Cell[14545, 304, 1236, 19, 265, "Text",ExpressionUUID->"6251ae4f-43f1-4423-8925-cec75742d661",
+Cell[29657, 615, 1236, 19, 173, "Text",ExpressionUUID->"6251ae4f-43f1-4423-8925-cec75742d661",
  CellGroupingRules->{"NormalGrouping", Inherited}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15818, 328, 194, 3, 54, "Subsection",ExpressionUUID->"373172f8-74f1-4220-9ebe-2416dfc9e17a"],
-Cell[16015, 333, 1664, 26, 334, "Text",ExpressionUUID->"8ee255bd-1e65-4bbe-a991-7bcf094c2f1a"]
+Cell[30930, 639, 194, 3, 54, "Subsection",ExpressionUUID->"373172f8-74f1-4220-9ebe-2416dfc9e17a"],
+Cell[31127, 644, 1747, 27, 242, "Text",ExpressionUUID->"8ee255bd-1e65-4bbe-a991-7bcf094c2f1a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17716, 364, 181, 3, 54, "Subsection",ExpressionUUID->"58a56aaa-7975-4ee4-a002-f1c47d1347a7"],
-Cell[17900, 369, 1460, 22, 357, "Text",ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-6afff5e19819"],
-Cell[19363, 393, 250, 7, 28, "Input",ExpressionUUID->"eaf103d9-1aa3-411d-861a-b7c14d7ce298"],
-Cell[19616, 402, 476, 9, 81, "Text",ExpressionUUID->"9cbd8da9-4d24-447e-b58b-3883abc41f32"],
+Cell[32911, 676, 181, 3, 54, "Subsection",ExpressionUUID->"58a56aaa-7975-4ee4-a002-f1c47d1347a7"],
+Cell[33095, 681, 994, 16, 127, "Text",ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-6afff5e19819"],
+Cell[34092, 699, 835, 14, 104, "Text",ExpressionUUID->"8217b818-b156-4d32-be0e-b77258b54a65"],
+Cell[34930, 715, 250, 7, 28, "Input",ExpressionUUID->"eaf103d9-1aa3-411d-861a-b7c14d7ce298"],
+Cell[35183, 724, 476, 9, 58, "Text",ExpressionUUID->"9cbd8da9-4d24-447e-b58b-3883abc41f32"],
 Cell[CellGroupData[{
-Cell[20117, 415, 465, 10, 67, "Input",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
-Cell[20585, 427, 202, 3, 32, "Output",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
-Cell[20790, 432, 206, 3, 32, "Output",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
+Cell[35684, 737, 465, 10, 67, "Input",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
+Cell[36152, 749, 202, 3, 32, "Output",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
+Cell[36357, 754, 206, 3, 32, "Output",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
 }, Open  ]],
-Cell[21011, 438, 492, 9, 81, "Text",ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-34e5917a1391"],
+Cell[36578, 760, 492, 9, 58, "Text",ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-34e5917a1391"],
 Cell[CellGroupData[{
-Cell[21528, 451, 649, 17, 48, "Input",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
-Cell[22180, 470, 216, 3, 32, "Output",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
+Cell[37095, 773, 649, 17, 48, "Input",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
+Cell[37747, 792, 216, 3, 32, "Output",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
 }, Open  ]],
-Cell[22411, 476, 249, 6, 58, "Text",ExpressionUUID->"2d19e097-3fab-4954-a06a-932ce1491ee1"]
+Cell[37978, 798, 249, 6, 35, "Text",ExpressionUUID->"2d19e097-3fab-4954-a06a-932ce1491ee1"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22709, 488, 175, 3, 67, "Section",ExpressionUUID->"7534d660-f9c5-4369-a20a-7957e72264ea"],
+Cell[38276, 810, 175, 3, 67, "Section",ExpressionUUID->"7534d660-f9c5-4369-a20a-7957e72264ea"],
 Cell[CellGroupData[{
-Cell[22909, 495, 212, 4, 54, "Subsection",ExpressionUUID->"57d37574-153b-4ca2-9763-f85052c2658a"],
-Cell[23124, 501, 1025, 17, 242, "Text",ExpressionUUID->"fb633041-ac89-4118-9292-ed3a74560cdf"]
+Cell[38476, 817, 212, 4, 54, "Subsection",ExpressionUUID->"57d37574-153b-4ca2-9763-f85052c2658a"],
+Cell[38691, 823, 1025, 17, 173, "Text",ExpressionUUID->"fb633041-ac89-4118-9292-ed3a74560cdf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24186, 523, 190, 3, 54, "Subsection",ExpressionUUID->"af71dad6-5b00-4127-82e1-052b665a8cf5"],
-Cell[24379, 528, 1070, 17, 242, "Text",ExpressionUUID->"7073e35e-ca31-4a7a-b097-610d0909709a"]
+Cell[39753, 845, 190, 3, 54, "Subsection",ExpressionUUID->"af71dad6-5b00-4127-82e1-052b665a8cf5"],
+Cell[39946, 850, 1070, 17, 242, "Text",ExpressionUUID->"7073e35e-ca31-4a7a-b097-610d0909709a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25486, 550, 182, 3, 54, "Subsection",ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-bee475c6d16f"],
-Cell[25671, 555, 605, 10, 81, "Text",ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-2fa0dde38e9e"]
+Cell[41053, 872, 182, 3, 54, "Subsection",ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-bee475c6d16f"],
+Cell[41238, 877, 605, 10, 81, "Text",ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-2fa0dde38e9e"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
