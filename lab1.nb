@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     47714,        991]
+NotebookDataLength[     47711,        991]
 NotebookOptionsPosition[     41883,        892]
 NotebookOutlinePosition[     42289,        908]
 CellTagsIndexPosition[     42246,        905]
@@ -551,6 +551,89 @@ de fapt paradigma de programare asincron\[ACup], care a most \[IHat]mprumutat\
 
 Cell[CellGroupData[{
 
+Cell["Sistemul Wolfram Mathematica", "Section",
+ CellChangeTimes->{{3.8757685702408075`*^9, 
+  3.875768576006258*^9}},ExpressionUUID->"7534d660-f9c5-4369-a20a-\
+7957e72264ea"],
+
+Cell[CellGroupData[{
+
+Cell["Descrierea general\[ACup] a sistemului Wolfram Mathematica", \
+"Subsection",
+ CellChangeTimes->{{3.8757685801117325`*^9, 
+  3.8757685934974933`*^9}},ExpressionUUID->"57d37574-153b-4ca2-9763-\
+f85052c2658a"],
+
+Cell["\<\
+Sistem Wolfram Mathematica este un mediu de programare \[IHat]n limbajul \
+Wolfram. Wolfram Mathematica are dou\[ACup] componente: front-end (interfa\
+\:021ba de utilizator) \:0219i backend (kernel). Kernel-ul poate fi rulat \
+\[IHat]ntr-un proces aparte \:0219i poate comunica cu front-end-ul. \
+Front-end-ul proceseaz\[ACup] input-ul utilizatorului \:0219i \
+rastereaz\[ACup] grafica, comunic\[AHat]ndu-se cu kernel-ul pentru a evalua \
+expresiile \:0219i a realiza computa\:021biile. 
+
+Wolfram Mathematica define\:0219te o mul\:021bime enorm\[ACup] de \
+opera\:021bii care pot fi folosite pentru a realiza computa\:021bii \:0219i \
+vizualiz\[ACup]ri legate de domeniul de inteligen\:021ba artificial\[ACup], \
+statistic\[ACup], analiza de date \:0219i matematic\[ACup].\
+\>", "Text",
+ CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
+  3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
+  3.8757728018239546`*^9}},ExpressionUUID->"fb633041-ac89-4118-9292-\
+ed3a74560cdf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Front-end-ul sistemului Wolfram Mathematica", "Subsection",
+ CellChangeTimes->{{3.875772813041052*^9, 
+  3.87577282372248*^9}},ExpressionUUID->"af71dad6-5b00-4127-82e1-\
+052b665a8cf5"],
+
+Cell["\<\
+Front-end-ul lui Wolfram Mathematica este de obicei numit Mathematica. \
+Mathematica func\:021bioneaz\[ACup] ca un notebook, ca Jupyter notebook \
+pentru Python sau Julia. Mathematica permite rularea codului organizat \
+\[IHat]n celule \:0219i privirea rezultatelor execut\[ACup]rii codului. \
+Acestea pot fi ori ni\:0219te simboluri afi\:0219ate la consol\[ACup], ori \
+interpretarea lor de c\[ACup]tre sistem \[IHat]n form\[ACup] de grafici sau \
+vizualiz\[ACup]ri diferite.
+Sistemul Mathematica are mai multe capacit\[ACup]\:021bi dec\[AHat]t rularea \
+codului, inclusiv tehnoredactarea, meniuri de ajutor pentru introducerea ecua\
+\:021biilor, etc. \[CapitalIHat]n sf\[AHat]r\:0219it, \[IHat]ntregul document \
+notebook poate fi convertat \[IHat]ntr-un PDF static.\
+\>", "Text",
+ CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
+  3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
+  3.875772781624386*^9}, {3.875772826996464*^9, 
+  3.8757728461216946`*^9}},ExpressionUUID->"7073e35e-ca31-4a7a-b097-\
+610d0909709a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Codul surs\[ACup] a sistemului", "Subsection",
+ CellChangeTimes->{{3.8757728552860546`*^9, 
+  3.8757728695412803`*^9}},ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-\
+bee475c6d16f"],
+
+Cell["\<\
+Codul surs\[ACup] a lui Wolfram Mathematica este \[IHat]nchis, \[IHat]ns\
+\[ACup] proprietarul Wolfram Research afirm\[ACup] c\[ACup] p\[ACup]strarea \
+sistemului \[IHat]nchis este o decizie cheie pentru sus\:021binerea \
+business-ului \:0219i continuitatea acestui software. \
+\>", "Text",
+ CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
+   3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
+   3.875772781624386*^9}, 3.875772826996464*^9, {3.8757728719318094`*^9, 
+   3.8757729050714145`*^9}},ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-\
+2fa0dde38e9e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Limbajul Wolfram", "Section",
  CellChangeTimes->{{3.875763738135383*^9, 3.8757637464282813`*^9}, {
   3.875768602145179*^9, 
@@ -804,89 +887,6 @@ Pattern-matching se folose\:0219te peste tot c\[AHat]nd are loc programarea \
   3.8757679613887825`*^9}},ExpressionUUID->"2d19e097-3fab-4954-a06a-\
 932ce1491ee1"]
 }, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Sistemul Wolfram Mathematica", "Section",
- CellChangeTimes->{{3.8757685702408075`*^9, 
-  3.875768576006258*^9}},ExpressionUUID->"7534d660-f9c5-4369-a20a-\
-7957e72264ea"],
-
-Cell[CellGroupData[{
-
-Cell["Descrierea general\[ACup] a sistemului Wolfram Mathematica", \
-"Subsection",
- CellChangeTimes->{{3.8757685801117325`*^9, 
-  3.8757685934974933`*^9}},ExpressionUUID->"57d37574-153b-4ca2-9763-\
-f85052c2658a"],
-
-Cell["\<\
-Sistem Wolfram Mathematica este un mediu de programare \[IHat]n limbajul \
-Wolfram. Wolfram Mathematica are dou\[ACup] componente: front-end (interfa\
-\:021ba de utilizator) \:0219i backend (kernel). Kernel-ul poate fi rulat \
-\[IHat]ntr-un proces aparte \:0219i poate comunica cu front-end-ul. \
-Front-end-ul proceseaz\[ACup] input-ul utilizatorului \:0219i \
-rastereaz\[ACup] grafica, comunic\[AHat]ndu-se cu kernel-ul pentru a evalua \
-expresiile \:0219i a realiza computa\:021biile. 
-
-Wolfram Mathematica define\:0219te o mul\:021bime enorm\[ACup] de \
-opera\:021bii care pot fi folosite pentru a realiza computa\:021bii \:0219i \
-vizualiz\[ACup]ri legate de domeniul de inteligen\:021ba artificial\[ACup], \
-statistic\[ACup], analiza de date \:0219i matematic\[ACup].\
-\>", "Text",
- CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
-  3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
-  3.8757728018239546`*^9}},ExpressionUUID->"fb633041-ac89-4118-9292-\
-ed3a74560cdf"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Front-end-ul sistemului Wolfram Mathematica", "Subsection",
- CellChangeTimes->{{3.875772813041052*^9, 
-  3.87577282372248*^9}},ExpressionUUID->"af71dad6-5b00-4127-82e1-\
-052b665a8cf5"],
-
-Cell["\<\
-Front-end-ul lui Wolfram Mathematica este de obicei numit Mathematica. \
-Mathematica func\:021bioneaz\[ACup] ca un notebook, ca Jupyter notebook \
-pentru Python sau Julia. Mathematica permite rularea codului organizat \
-\[IHat]n celule \:0219i privirea rezultatelor execut\[ACup]rii codului. \
-Acestea pot fi ori ni\:0219te simboluri afi\:0219ate la consol\[ACup], ori \
-interpretarea lor de c\[ACup]tre sistem \[IHat]n form\[ACup] de grafici sau \
-vizualiz\[ACup]ri diferite.
-Sistemul Mathematica are mai multe capacit\[ACup]\:021bi dec\[AHat]t rularea \
-codului, inclusiv tehnoredactarea, meniuri de ajutor pentru introducerea ecua\
-\:021biilor, etc. \[CapitalIHat]n sf\[AHat]r\:0219it, \[IHat]ntregul document \
-notebook poate fi convertat \[IHat]ntr-un PDF static.\
-\>", "Text",
- CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
-  3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
-  3.875772781624386*^9}, {3.875772826996464*^9, 
-  3.8757728461216946`*^9}},ExpressionUUID->"7073e35e-ca31-4a7a-b097-\
-610d0909709a"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Codul surs\[ACup] a sistemului", "Subsection",
- CellChangeTimes->{{3.8757728552860546`*^9, 
-  3.8757728695412803`*^9}},ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-\
-bee475c6d16f"],
-
-Cell["\<\
-Codul surs\[ACup] a lui Wolfram Mathematica este \[IHat]nchis, \[IHat]ns\
-\[ACup] proprietarul Wolfram Research afirm\[ACup] c\[ACup] p\[ACup]strarea \
-sistemului \[IHat]nchis este o decizie cheie pentru sus\:021binerea \
-business-ului \:0219i continuitatea acestui software. \
-\>", "Text",
- CellChangeTimes->{{3.8757688400797434`*^9, 3.8757691533519506`*^9}, {
-   3.875772092618019*^9, 3.875772208028386*^9}, {3.8757722414038467`*^9, 
-   3.875772781624386*^9}, 3.875772826996464*^9, {3.8757728719318094`*^9, 
-   3.8757729050714145`*^9}},ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-\
-2fa0dde38e9e"]
-}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -908,23 +908,23 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 234, 4, 160, "Title",ExpressionUUID->"5569aab6-d57e-4858-aab2-d9850387774b"],
-Cell[817, 28, 211, 4, 85, "Subtitle",ExpressionUUID->"5a103b70-f925-4eb4-b60a-24ef9a6ed117"],
+Cell[580, 22, 234, 4, 98, "Title",ExpressionUUID->"5569aab6-d57e-4858-aab2-d9850387774b"],
+Cell[817, 28, 211, 4, 53, "Subtitle",ExpressionUUID->"5a103b70-f925-4eb4-b60a-24ef9a6ed117"],
 Cell[1031, 34, 184, 3, 31, "Subsubtitle",ExpressionUUID->"7ed57c85-8e68-4366-aaa5-a08ff4ed60f5"],
-Cell[1218, 39, 99, 1, 1, "PageBreak",ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1",
+Cell[1218, 39, 99, 1, 4, "PageBreak",ExpressionUUID->"92b32704-e9b3-4acf-9ef0-4fd5b52d70d1",
  PageBreakBelow->True],
 Cell[CellGroupData[{
-Cell[1342, 44, 217, 3, 105, "Section",ExpressionUUID->"5f2beb92-3ada-4762-92a3-90f6d57ab33c"],
+Cell[1342, 44, 217, 3, 67, "Section",ExpressionUUID->"5f2beb92-3ada-4762-92a3-90f6d57ab33c"],
 Cell[CellGroupData[{
 Cell[1584, 51, 161, 3, 54, "Subsection",ExpressionUUID->"43db8621-d684-4227-a984-5e1bba05c347"],
-Cell[1748, 56, 798, 13, 173, "Text",ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-1981cac627f1"],
-Cell[2549, 71, 487, 9, 81, "Text",ExpressionUUID->"c3ccb49d-cb96-4b77-8715-96b3d28f4c46"]
+Cell[1748, 56, 798, 13, 104, "Text",ExpressionUUID->"fb71e26a-8fc4-4ed5-bebd-1981cac627f1"],
+Cell[2549, 71, 487, 9, 58, "Text",ExpressionUUID->"c3ccb49d-cb96-4b77-8715-96b3d28f4c46"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[3073, 85, 249, 4, 54, "Subsection",ExpressionUUID->"171a4cb0-a4a6-4311-ae46-52956ccdcf19"],
-Cell[3325, 91, 1168, 18, 58, "Text",ExpressionUUID->"5b486979-9aac-4f5f-aebc-44a2559ff0f6"],
-Cell[4496, 111, 1969, 38, 196, "Text",ExpressionUUID->"010d7e6d-a313-4f07-aaf0-de7815ba08e5"],
-Cell[6468, 151, 1361, 21, 104, "Text",ExpressionUUID->"c70c646c-cfbb-40e0-8104-510c172e4280"],
+Cell[3325, 91, 1168, 18, 35, "Text",ExpressionUUID->"5b486979-9aac-4f5f-aebc-44a2559ff0f6"],
+Cell[4496, 111, 1969, 38, 127, "Text",ExpressionUUID->"010d7e6d-a313-4f07-aaf0-de7815ba08e5"],
+Cell[6468, 151, 1361, 21, 81, "Text",ExpressionUUID->"c70c646c-cfbb-40e0-8104-510c172e4280"],
 Cell[7832, 174, 1307, 20, 81, "Text",ExpressionUUID->"71b6f1fe-e3a5-477d-8698-a9c5ba59700f"],
 Cell[9142, 196, 1688, 35, 81, "Text",ExpressionUUID->"f777aac5-ec40-4443-8ca5-a5ee364c23df"],
 Cell[10833, 233, 2014, 34, 150, "Text",ExpressionUUID->"f6f69bd3-5901-42a3-b01d-f4469e9980eb"],
@@ -943,53 +943,53 @@ Cell[25409, 521, 1515, 26, 81, "Text",ExpressionUUID->"02bc032c-43eb-429e-9f3e-2
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26973, 553, 212, 4, 67, "Section",ExpressionUUID->"201ce54c-206b-4413-8362-4573e63e22eb"],
+Cell[26973, 553, 175, 3, 67, "Section",ExpressionUUID->"7534d660-f9c5-4369-a20a-7957e72264ea"],
 Cell[CellGroupData[{
-Cell[27210, 561, 244, 4, 54, "Subsection",ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-9b30fd0c80e8"],
-Cell[27457, 567, 1343, 20, 150, "Text",ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-8c1fa8d94c7e"],
-Cell[CellGroupData[{
-Cell[28825, 591, 610, 15, 105, "Input",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
-Cell[29438, 608, 204, 4, 32, "Output",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
-}, Open  ]],
-Cell[29657, 615, 1236, 19, 173, "Text",ExpressionUUID->"6251ae4f-43f1-4423-8925-cec75742d661",
- CellGroupingRules->{"NormalGrouping", Inherited}]
+Cell[27173, 560, 212, 4, 54, "Subsection",ExpressionUUID->"57d37574-153b-4ca2-9763-f85052c2658a"],
+Cell[27388, 566, 1025, 17, 173, "Text",ExpressionUUID->"fb633041-ac89-4118-9292-ed3a74560cdf"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30930, 639, 194, 3, 54, "Subsection",ExpressionUUID->"373172f8-74f1-4220-9ebe-2416dfc9e17a"],
-Cell[31127, 644, 1747, 27, 242, "Text",ExpressionUUID->"8ee255bd-1e65-4bbe-a991-7bcf094c2f1a"]
+Cell[28450, 588, 190, 3, 54, "Subsection",ExpressionUUID->"af71dad6-5b00-4127-82e1-052b665a8cf5"],
+Cell[28643, 593, 1070, 17, 150, "Text",ExpressionUUID->"7073e35e-ca31-4a7a-b097-610d0909709a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32911, 676, 181, 3, 54, "Subsection",ExpressionUUID->"58a56aaa-7975-4ee4-a002-f1c47d1347a7"],
-Cell[33095, 681, 994, 16, 127, "Text",ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-6afff5e19819"],
-Cell[34092, 699, 835, 14, 104, "Text",ExpressionUUID->"8217b818-b156-4d32-be0e-b77258b54a65"],
-Cell[34930, 715, 250, 7, 28, "Input",ExpressionUUID->"eaf103d9-1aa3-411d-861a-b7c14d7ce298"],
-Cell[35183, 724, 476, 9, 58, "Text",ExpressionUUID->"9cbd8da9-4d24-447e-b58b-3883abc41f32"],
-Cell[CellGroupData[{
-Cell[35684, 737, 465, 10, 67, "Input",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
-Cell[36152, 749, 202, 3, 32, "Output",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
-Cell[36357, 754, 206, 3, 32, "Output",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
-}, Open  ]],
-Cell[36578, 760, 492, 9, 58, "Text",ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-34e5917a1391"],
-Cell[CellGroupData[{
-Cell[37095, 773, 649, 17, 48, "Input",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
-Cell[37747, 792, 216, 3, 32, "Output",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
-}, Open  ]],
-Cell[37978, 798, 249, 6, 35, "Text",ExpressionUUID->"2d19e097-3fab-4954-a06a-932ce1491ee1"]
+Cell[29750, 615, 182, 3, 54, "Subsection",ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-bee475c6d16f"],
+Cell[29935, 620, 605, 10, 58, "Text",ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-2fa0dde38e9e"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38276, 810, 175, 3, 67, "Section",ExpressionUUID->"7534d660-f9c5-4369-a20a-7957e72264ea"],
+Cell[30589, 636, 212, 4, 67, "Section",ExpressionUUID->"201ce54c-206b-4413-8362-4573e63e22eb"],
 Cell[CellGroupData[{
-Cell[38476, 817, 212, 4, 54, "Subsection",ExpressionUUID->"57d37574-153b-4ca2-9763-f85052c2658a"],
-Cell[38691, 823, 1025, 17, 173, "Text",ExpressionUUID->"fb633041-ac89-4118-9292-ed3a74560cdf"]
+Cell[30826, 644, 244, 4, 54, "Subsection",ExpressionUUID->"fda7fc9c-0d99-4caa-b58d-9b30fd0c80e8"],
+Cell[31073, 650, 1343, 20, 150, "Text",ExpressionUUID->"e85528a7-3f2d-4b79-b9a7-8c1fa8d94c7e"],
+Cell[CellGroupData[{
+Cell[32441, 674, 610, 15, 105, "Input",ExpressionUUID->"8fa7ebf3-05b7-4104-b7b7-869058718bb5"],
+Cell[33054, 691, 204, 4, 32, "Output",ExpressionUUID->"493f775b-87cd-440e-8e7f-4264cd69b135"]
+}, Open  ]],
+Cell[33273, 698, 1236, 19, 173, "Text",ExpressionUUID->"6251ae4f-43f1-4423-8925-cec75742d661",
+ CellGroupingRules->{"NormalGrouping", Inherited}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39753, 845, 190, 3, 54, "Subsection",ExpressionUUID->"af71dad6-5b00-4127-82e1-052b665a8cf5"],
-Cell[39946, 850, 1070, 17, 242, "Text",ExpressionUUID->"7073e35e-ca31-4a7a-b097-610d0909709a"]
+Cell[34546, 722, 194, 3, 54, "Subsection",ExpressionUUID->"373172f8-74f1-4220-9ebe-2416dfc9e17a"],
+Cell[34743, 727, 1747, 27, 242, "Text",ExpressionUUID->"8ee255bd-1e65-4bbe-a991-7bcf094c2f1a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41053, 872, 182, 3, 54, "Subsection",ExpressionUUID->"d9530fcb-8ef8-4a4c-8935-bee475c6d16f"],
-Cell[41238, 877, 605, 10, 81, "Text",ExpressionUUID->"c4a261a2-cdf6-4f89-b2f7-2fa0dde38e9e"]
+Cell[36527, 759, 181, 3, 54, "Subsection",ExpressionUUID->"58a56aaa-7975-4ee4-a002-f1c47d1347a7"],
+Cell[36711, 764, 994, 16, 127, "Text",ExpressionUUID->"26ad54cf-e8a5-4b4c-baf9-6afff5e19819"],
+Cell[37708, 782, 835, 14, 104, "Text",ExpressionUUID->"8217b818-b156-4d32-be0e-b77258b54a65"],
+Cell[38546, 798, 250, 7, 28, "Input",ExpressionUUID->"eaf103d9-1aa3-411d-861a-b7c14d7ce298"],
+Cell[38799, 807, 476, 9, 58, "Text",ExpressionUUID->"9cbd8da9-4d24-447e-b58b-3883abc41f32"],
+Cell[CellGroupData[{
+Cell[39300, 820, 465, 10, 67, "Input",ExpressionUUID->"1b38e20a-b753-4ac6-9d2a-ea49b9d316c0"],
+Cell[39768, 832, 202, 3, 32, "Output",ExpressionUUID->"addf3068-f61a-45f3-9865-b4d7dcb508c7"],
+Cell[39973, 837, 206, 3, 32, "Output",ExpressionUUID->"95e75edd-2f84-4193-9bdd-7bc9504bc434"]
+}, Open  ]],
+Cell[40194, 843, 492, 9, 58, "Text",ExpressionUUID->"c712ad6a-6bcb-4c0f-8ff5-34e5917a1391"],
+Cell[CellGroupData[{
+Cell[40711, 856, 649, 17, 48, "Input",ExpressionUUID->"8ea1d833-6c58-4993-8ee5-5a8bd9d4ab8e"],
+Cell[41363, 875, 216, 3, 32, "Output",ExpressionUUID->"063d7014-baa5-406e-b9e8-a61b9a7a4fd0"]
+}, Open  ]],
+Cell[41594, 881, 249, 6, 35, "Text",ExpressionUUID->"2d19e097-3fab-4954-a06a-932ce1491ee1"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
